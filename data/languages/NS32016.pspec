@@ -2,4 +2,7 @@
 
 <processor_spec>
   <programcounter register="PC"/>
+  <register_data>
+    <register name="contextreg" hidden="true"/>
+  </register_data>
 </processor_spec>
