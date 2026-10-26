@@ -1,0 +1,3385 @@
+
+/tmp/claude-1000/ns4/tmp.tqwR7wEaQG/532/emu.out:     file format a.out-ns32k-netbsd
+
+
+Disassembly of section .text:
+
+00001000 <start>:
+    1000:	43 00       	addd	r0, r1
+
+00001002 <e_addd_basic>:
+    1002:	a2          	nop
+
+00001003 <t_addd_carry>:
+    1003:	43 00       	addd	r0, r1
+
+00001005 <e_addd_carry>:
+    1005:	a2          	nop
+
+00001006 <t_addd_overflow>:
+    1006:	43 00       	addd	r0, r1
+
+00001008 <e_addd_overflow>:
+    1008:	a2          	nop
+
+00001009 <t_addb_partial>:
+    1009:	40 00       	addb	r0, r1
+
+0000100b <e_addb_partial>:
+    100b:	a2          	nop
+
+0000100c <t_addb_overflow>:
+    100c:	40 00       	addb	r0, r1
+
+0000100e <e_addb_overflow>:
+    100e:	a2          	nop
+
+0000100f <t_addw_mem>:
+    100f:	81 c0 04    	addw	4(fp), r2
+
+00001012 <e_addw_mem>:
+    1012:	a2          	nop
+
+00001013 <t_subd_basic>:
+    1013:	63 00       	subd	r0, r1
+
+00001015 <e_subd_basic>:
+    1015:	a2          	nop
+
+00001016 <t_subd_borrow>:
+    1016:	63 00       	subd	r0, r1
+
+00001018 <e_subd_borrow>:
+    1018:	a2          	nop
+
+00001019 <t_subb_overflow>:
+    1019:	60 00       	subb	r0, r1
+
+0000101b <e_subb_overflow>:
+    101b:	a2          	nop
+
+0000101c <t_subd_overflow>:
+    101c:	63 00       	subd	r0, r1
+
+0000101e <e_subd_overflow>:
+    101e:	a2          	nop
+
+0000101f <t_addcd_in>:
+    101f:	53 00       	addcd	r0, r1
+
+00001021 <e_addcd_in>:
+    1021:	a2          	nop
+
+00001022 <t_addcd_chain>:
+    1022:	53 00       	addcd	r0, r1
+
+00001024 <e_addcd_chain>:
+    1024:	a2          	nop
+
+00001025 <t_subcd_borrow>:
+    1025:	73 00       	subcd	r0, r1
+
+00001027 <e_subcd_borrow>:
+    1027:	a2          	nop
+
+00001028 <t_subcd_plain>:
+    1028:	73 00       	subcd	r0, r1
+
+0000102a <e_subcd_plain>:
+    102a:	a2          	nop
+
+0000102b <t_cmpd_gt>:
+    102b:	47 00       	cmpd	r0, r1
+
+0000102d <e_cmpd_gt>:
+    102d:	a2          	nop
+
+0000102e <t_cmpd_eq>:
+    102e:	47 00       	cmpd	r0, r1
+
+00001030 <e_cmpd_eq>:
+    1030:	a2          	nop
+
+00001031 <t_cmpd_signed_vs_unsigned>:
+    1031:	47 00       	cmpd	r0, r1
+
+00001033 <e_cmpd_signed_vs_unsigned>:
+    1033:	a2          	nop
+
+00001034 <t_cmpb_lt>:
+    1034:	44 00       	cmpb	r0, r1
+
+00001036 <e_cmpb_lt>:
+    1036:	a2          	nop
+
+00001037 <t_movd_reg>:
+    1037:	57 00       	movd	r0, r1
+
+00001039 <e_movd_reg>:
+    1039:	a2          	nop
+
+0000103a <t_movb_partial>:
+    103a:	54 00       	movb	r0, r1
+
+0000103c <e_movb_partial>:
+    103c:	a2          	nop
+
+0000103d <t_movw_partial>:
+    103d:	55 00       	movw	r0, r1
+
+0000103f <e_movw_partial>:
+    103f:	a2          	nop
+
+00001040 <t_movqd_neg>:
+    1040:	df 26       	movqd	-3, r4
+
+00001042 <e_movqd_neg>:
+    1042:	a2          	nop
+
+00001043 <t_movqb_low>:
+    1043:	dc 0a       	movqb	5, r1
+
+00001045 <e_movqb_low>:
+    1045:	a2          	nop
+
+00001046 <t_addqd>:
+    1046:	8f 22       	addqd	5, r4
+
+00001048 <e_addqd>:
+    1048:	a2          	nop
+
+00001049 <t_addqd_ovf>:
+    1049:	8f 20       	addqd	1, r4
+
+0000104b <e_addqd_ovf>:
+    104b:	a2          	nop
+
+0000104c <t_cmpqb_neg>:
+    104c:	1c 08       	cmpqb	0, r1
+
+0000104e <e_cmpqb_neg>:
+    104e:	a2          	nop
+
+0000104f <t_cmpqd_eq>:
+    104f:	9f 0f       	cmpqd	-1, r1
+
+00001051 <e_cmpqd_eq>:
+    1051:	a2          	nop
+
+00001052 <t_bicd>:
+    1052:	4b 00       	bicd	r0, r1
+
+00001054 <e_bicd>:
+    1054:	a2          	nop
+
+00001055 <t_ord>:
+    1055:	5b 00       	ord	r0, r1
+
+00001057 <e_ord>:
+    1057:	a2          	nop
+
+00001058 <t_andd>:
+    1058:	6b 00       	andd	r0, r1
+
+0000105a <e_andd>:
+    105a:	a2          	nop
+
+0000105b <t_xord>:
+    105b:	7b 00       	xord	r0, r1
+
+0000105d <e_xord>:
+    105d:	a2          	nop
+
+0000105e <t_comd>:
+    105e:	4e 77 00    	comd	r0, r1
+
+00001061 <e_comd>:
+    1061:	a2          	nop
+
+00001062 <t_notd_bit0>:
+    1062:	4e 67 00    	notd	r0, r1
+
+00001065 <e_notd_bit0>:
+    1065:	a2          	nop
+
+00001066 <t_notd_bit0b>:
+    1066:	4e 67 00    	notd	r0, r1
+
+00001069 <e_notd_bit0b>:
+    1069:	a2          	nop
+
+0000106a <t_negd_pos>:
+    106a:	4e 63 00    	negd	r0, r1
+
+0000106d <e_negd_pos>:
+    106d:	a2          	nop
+
+0000106e <t_negd_zero>:
+    106e:	4e 63 00    	negd	r0, r1
+
+00001071 <e_negd_zero>:
+    1071:	a2          	nop
+
+00001072 <t_negd_min>:
+    1072:	4e 63 00    	negd	r0, r1
+
+00001075 <e_negd_min>:
+    1075:	a2          	nop
+
+00001076 <t_absd_neg>:
+    1076:	4e 73 00    	absd	r0, r1
+
+00001079 <e_absd_neg>:
+    1079:	a2          	nop
+
+0000107a <t_absd_min>:
+    107a:	4e 73 00    	absd	r0, r1
+
+0000107d <e_absd_min>:
+    107d:	a2          	nop
+
+0000107e <t_absb>:
+    107e:	4e 70 00    	absb	r0, r1
+
+00001081 <e_absb>:
+    1081:	a2          	nop
+
+00001082 <t_movxbd>:
+    1082:	ce 5c 00    	movxbd	r0, r1
+
+00001085 <e_movxbd>:
+    1085:	a2          	nop
+
+00001086 <t_movzbd>:
+    1086:	ce 58 00    	movzbd	r0, r1
+
+00001089 <e_movzbd>:
+    1089:	a2          	nop
+
+0000108a <t_movxwd>:
+    108a:	ce 5d 00    	movxwd	r0, r1
+
+0000108d <e_movxwd>:
+    108d:	a2          	nop
+
+0000108e <t_movzwd>:
+    108e:	ce 59 00    	movzwd	r0, r1
+
+00001091 <e_movzwd>:
+    1091:	a2          	nop
+
+00001092 <t_movxbw>:
+    1092:	ce 50 00    	movxbw	r0, r1
+
+00001095 <e_movxbw>:
+    1095:	a2          	nop
+
+00001096 <t_movzbw>:
+    1096:	ce 54 00    	movzbw	r0, r1
+
+00001099 <e_movzbw>:
+    1099:	a2          	nop
+
+0000109a <t_muld>:
+    109a:	ce 63 00    	muld	r0, r1
+
+0000109d <e_muld>:
+    109d:	a2          	nop
+
+0000109e <t_mulb_trunc>:
+    109e:	ce 60 00    	mulb	r0, r1
+
+000010a1 <e_mulb_trunc>:
+    10a1:	a2          	nop
+
+000010a2 <t_meid>:
+    10a2:	ce a7 00    	meid	r0, r2
+
+000010a5 <e_meid>:
+    10a5:	a2          	nop
+
+000010a6 <t_meib>:
+    10a6:	ce a4 00    	meib	r0, r2
+
+000010a9 <e_meib>:
+    10a9:	a2          	nop
+
+000010aa <t_deid>:
+    10aa:	ce af 00    	deid	r0, r2
+
+000010ad <e_deid>:
+    10ad:	a2          	nop
+
+000010ae <t_quod_neg>:
+    10ae:	ce 73 00    	quod	r0, r1
+
+000010b1 <e_quod_neg>:
+    10b1:	a2          	nop
+
+000010b2 <t_remd_neg>:
+    10b2:	ce 77 00    	remd	r0, r1
+
+000010b5 <e_remd_neg>:
+    10b5:	a2          	nop
+
+000010b6 <t_divd_neg>:
+    10b6:	ce 7f 00    	divd	r0, r1
+
+000010b9 <e_divd_neg>:
+    10b9:	a2          	nop
+
+000010ba <t_modd_neg>:
+    10ba:	ce 7b 00    	modd	r0, r1
+
+000010bd <e_modd_neg>:
+    10bd:	a2          	nop
+
+000010be <t_divd_negdivisor>:
+    10be:	ce 7f 00    	divd	r0, r1
+
+000010c1 <e_divd_negdivisor>:
+    10c1:	a2          	nop
+
+000010c2 <t_modd_negdivisor>:
+    10c2:	ce 7b 00    	modd	r0, r1
+
+000010c5 <e_modd_negdivisor>:
+    10c5:	a2          	nop
+
+000010c6 <t_quob>:
+    10c6:	ce 70 00    	quob	r0, r1
+
+000010c9 <e_quob>:
+    10c9:	a2          	nop
+
+000010ca <t_divd_exact>:
+    10ca:	ce 7f 00    	divd	r0, r1
+
+000010cd <e_divd_exact>:
+    10cd:	a2          	nop
+
+000010ce <t_lshd_right>:
+    10ce:	4e 57 00    	lshd	r0, r1
+
+000010d1 <e_lshd_right>:
+    10d1:	a2          	nop
+
+000010d2 <t_lshd_left>:
+    10d2:	4e 57 00    	lshd	r0, r1
+
+000010d5 <e_lshd_left>:
+    10d5:	a2          	nop
+
+000010d6 <t_ashd_right>:
+    10d6:	4e 47 00    	ashd	r0, r1
+
+000010d9 <e_ashd_right>:
+    10d9:	a2          	nop
+
+000010da <t_ashd_left>:
+    10da:	4e 47 00    	ashd	r0, r1
+
+000010dd <e_ashd_left>:
+    10dd:	a2          	nop
+
+000010de <t_rotd>:
+    10de:	4e 43 00    	rotd	r0, r1
+
+000010e1 <e_rotd>:
+    10e1:	a2          	nop
+
+000010e2 <t_rotb_right>:
+    10e2:	4e 40 00    	rotb	r0, r1
+
+000010e5 <e_rotb_right>:
+    10e5:	a2          	nop
+
+000010e6 <t_lshb>:
+    10e6:	4e 54 00    	lshb	r0, r1
+
+000010e9 <e_lshb>:
+    10e9:	a2          	nop
+
+000010ea <t_beq_0>:
+    10ea:	0a 04       	beq	10ee <e_beq_0>
+    10ec:	df 10       	movqd	1, r2
+
+000010ee <e_beq_0>:
+    10ee:	a2          	nop
+
+000010ef <t_seq_0>:
+    10ef:	3c 18       	seqb	r3
+
+000010f1 <e_seq_0>:
+    10f1:	a2          	nop
+
+000010f2 <t_beq_1>:
+    10f2:	0a 04       	beq	10f6 <e_beq_1>
+    10f4:	df 10       	movqd	1, r2
+
+000010f6 <e_beq_1>:
+    10f6:	a2          	nop
+
+000010f7 <t_seq_1>:
+    10f7:	3c 18       	seqb	r3
+
+000010f9 <e_seq_1>:
+    10f9:	a2          	nop
+
+000010fa <t_beq_2>:
+    10fa:	0a 04       	beq	10fe <e_beq_2>
+    10fc:	df 10       	movqd	1, r2
+
+000010fe <e_beq_2>:
+    10fe:	a2          	nop
+
+000010ff <t_seq_2>:
+    10ff:	3c 18       	seqb	r3
+
+00001101 <e_seq_2>:
+    1101:	a2          	nop
+
+00001102 <t_beq_3>:
+    1102:	0a 04       	beq	1106 <e_beq_3>
+    1104:	df 10       	movqd	1, r2
+
+00001106 <e_beq_3>:
+    1106:	a2          	nop
+
+00001107 <t_seq_3>:
+    1107:	3c 18       	seqb	r3
+
+00001109 <e_seq_3>:
+    1109:	a2          	nop
+
+0000110a <t_bne_0>:
+    110a:	1a 04       	bne	110e <e_bne_0>
+    110c:	df 10       	movqd	1, r2
+
+0000110e <e_bne_0>:
+    110e:	a2          	nop
+
+0000110f <t_sne_0>:
+    110f:	bc 18       	sneb	r3
+
+00001111 <e_sne_0>:
+    1111:	a2          	nop
+
+00001112 <t_bne_1>:
+    1112:	1a 04       	bne	1116 <e_bne_1>
+    1114:	df 10       	movqd	1, r2
+
+00001116 <e_bne_1>:
+    1116:	a2          	nop
+
+00001117 <t_sne_1>:
+    1117:	bc 18       	sneb	r3
+
+00001119 <e_sne_1>:
+    1119:	a2          	nop
+
+0000111a <t_bne_2>:
+    111a:	1a 04       	bne	111e <e_bne_2>
+    111c:	df 10       	movqd	1, r2
+
+0000111e <e_bne_2>:
+    111e:	a2          	nop
+
+0000111f <t_sne_2>:
+    111f:	bc 18       	sneb	r3
+
+00001121 <e_sne_2>:
+    1121:	a2          	nop
+
+00001122 <t_bne_3>:
+    1122:	1a 04       	bne	1126 <e_bne_3>
+    1124:	df 10       	movqd	1, r2
+
+00001126 <e_bne_3>:
+    1126:	a2          	nop
+
+00001127 <t_sne_3>:
+    1127:	bc 18       	sneb	r3
+
+00001129 <e_sne_3>:
+    1129:	a2          	nop
+
+0000112a <t_bcs_0>:
+    112a:	2a 04       	bcs	112e <e_bcs_0>
+    112c:	df 10       	movqd	1, r2
+
+0000112e <e_bcs_0>:
+    112e:	a2          	nop
+
+0000112f <t_scs_0>:
+    112f:	3c 19       	scsb	r3
+
+00001131 <e_scs_0>:
+    1131:	a2          	nop
+
+00001132 <t_bcs_1>:
+    1132:	2a 04       	bcs	1136 <e_bcs_1>
+    1134:	df 10       	movqd	1, r2
+
+00001136 <e_bcs_1>:
+    1136:	a2          	nop
+
+00001137 <t_scs_1>:
+    1137:	3c 19       	scsb	r3
+
+00001139 <e_scs_1>:
+    1139:	a2          	nop
+
+0000113a <t_bcs_2>:
+    113a:	2a 04       	bcs	113e <e_bcs_2>
+    113c:	df 10       	movqd	1, r2
+
+0000113e <e_bcs_2>:
+    113e:	a2          	nop
+
+0000113f <t_scs_2>:
+    113f:	3c 19       	scsb	r3
+
+00001141 <e_scs_2>:
+    1141:	a2          	nop
+
+00001142 <t_bcs_3>:
+    1142:	2a 04       	bcs	1146 <e_bcs_3>
+    1144:	df 10       	movqd	1, r2
+
+00001146 <e_bcs_3>:
+    1146:	a2          	nop
+
+00001147 <t_scs_3>:
+    1147:	3c 19       	scsb	r3
+
+00001149 <e_scs_3>:
+    1149:	a2          	nop
+
+0000114a <t_bcc_0>:
+    114a:	3a 04       	bcc	114e <e_bcc_0>
+    114c:	df 10       	movqd	1, r2
+
+0000114e <e_bcc_0>:
+    114e:	a2          	nop
+
+0000114f <t_scc_0>:
+    114f:	bc 19       	sccb	r3
+
+00001151 <e_scc_0>:
+    1151:	a2          	nop
+
+00001152 <t_bcc_1>:
+    1152:	3a 04       	bcc	1156 <e_bcc_1>
+    1154:	df 10       	movqd	1, r2
+
+00001156 <e_bcc_1>:
+    1156:	a2          	nop
+
+00001157 <t_scc_1>:
+    1157:	bc 19       	sccb	r3
+
+00001159 <e_scc_1>:
+    1159:	a2          	nop
+
+0000115a <t_bcc_2>:
+    115a:	3a 04       	bcc	115e <e_bcc_2>
+    115c:	df 10       	movqd	1, r2
+
+0000115e <e_bcc_2>:
+    115e:	a2          	nop
+
+0000115f <t_scc_2>:
+    115f:	bc 19       	sccb	r3
+
+00001161 <e_scc_2>:
+    1161:	a2          	nop
+
+00001162 <t_bcc_3>:
+    1162:	3a 04       	bcc	1166 <e_bcc_3>
+    1164:	df 10       	movqd	1, r2
+
+00001166 <e_bcc_3>:
+    1166:	a2          	nop
+
+00001167 <t_scc_3>:
+    1167:	bc 19       	sccb	r3
+
+00001169 <e_scc_3>:
+    1169:	a2          	nop
+
+0000116a <t_bhi_0>:
+    116a:	4a 04       	bhi	116e <e_bhi_0>
+    116c:	df 10       	movqd	1, r2
+
+0000116e <e_bhi_0>:
+    116e:	a2          	nop
+
+0000116f <t_shi_0>:
+    116f:	3c 1a       	shib	r3
+
+00001171 <e_shi_0>:
+    1171:	a2          	nop
+
+00001172 <t_bhi_1>:
+    1172:	4a 04       	bhi	1176 <e_bhi_1>
+    1174:	df 10       	movqd	1, r2
+
+00001176 <e_bhi_1>:
+    1176:	a2          	nop
+
+00001177 <t_shi_1>:
+    1177:	3c 1a       	shib	r3
+
+00001179 <e_shi_1>:
+    1179:	a2          	nop
+
+0000117a <t_bhi_2>:
+    117a:	4a 04       	bhi	117e <e_bhi_2>
+    117c:	df 10       	movqd	1, r2
+
+0000117e <e_bhi_2>:
+    117e:	a2          	nop
+
+0000117f <t_shi_2>:
+    117f:	3c 1a       	shib	r3
+
+00001181 <e_shi_2>:
+    1181:	a2          	nop
+
+00001182 <t_bhi_3>:
+    1182:	4a 04       	bhi	1186 <e_bhi_3>
+    1184:	df 10       	movqd	1, r2
+
+00001186 <e_bhi_3>:
+    1186:	a2          	nop
+
+00001187 <t_shi_3>:
+    1187:	3c 1a       	shib	r3
+
+00001189 <e_shi_3>:
+    1189:	a2          	nop
+
+0000118a <t_bls_0>:
+    118a:	5a 04       	bls	118e <e_bls_0>
+    118c:	df 10       	movqd	1, r2
+
+0000118e <e_bls_0>:
+    118e:	a2          	nop
+
+0000118f <t_sls_0>:
+    118f:	bc 1a       	slsb	r3
+
+00001191 <e_sls_0>:
+    1191:	a2          	nop
+
+00001192 <t_bls_1>:
+    1192:	5a 04       	bls	1196 <e_bls_1>
+    1194:	df 10       	movqd	1, r2
+
+00001196 <e_bls_1>:
+    1196:	a2          	nop
+
+00001197 <t_sls_1>:
+    1197:	bc 1a       	slsb	r3
+
+00001199 <e_sls_1>:
+    1199:	a2          	nop
+
+0000119a <t_bls_2>:
+    119a:	5a 04       	bls	119e <e_bls_2>
+    119c:	df 10       	movqd	1, r2
+
+0000119e <e_bls_2>:
+    119e:	a2          	nop
+
+0000119f <t_sls_2>:
+    119f:	bc 1a       	slsb	r3
+
+000011a1 <e_sls_2>:
+    11a1:	a2          	nop
+
+000011a2 <t_bls_3>:
+    11a2:	5a 04       	bls	11a6 <e_bls_3>
+    11a4:	df 10       	movqd	1, r2
+
+000011a6 <e_bls_3>:
+    11a6:	a2          	nop
+
+000011a7 <t_sls_3>:
+    11a7:	bc 1a       	slsb	r3
+
+000011a9 <e_sls_3>:
+    11a9:	a2          	nop
+
+000011aa <t_bgt_0>:
+    11aa:	6a 04       	bgt	11ae <e_bgt_0>
+    11ac:	df 10       	movqd	1, r2
+
+000011ae <e_bgt_0>:
+    11ae:	a2          	nop
+
+000011af <t_sgt_0>:
+    11af:	3c 1b       	sgtb	r3
+
+000011b1 <e_sgt_0>:
+    11b1:	a2          	nop
+
+000011b2 <t_bgt_1>:
+    11b2:	6a 04       	bgt	11b6 <e_bgt_1>
+    11b4:	df 10       	movqd	1, r2
+
+000011b6 <e_bgt_1>:
+    11b6:	a2          	nop
+
+000011b7 <t_sgt_1>:
+    11b7:	3c 1b       	sgtb	r3
+
+000011b9 <e_sgt_1>:
+    11b9:	a2          	nop
+
+000011ba <t_bgt_2>:
+    11ba:	6a 04       	bgt	11be <e_bgt_2>
+    11bc:	df 10       	movqd	1, r2
+
+000011be <e_bgt_2>:
+    11be:	a2          	nop
+
+000011bf <t_sgt_2>:
+    11bf:	3c 1b       	sgtb	r3
+
+000011c1 <e_sgt_2>:
+    11c1:	a2          	nop
+
+000011c2 <t_bgt_3>:
+    11c2:	6a 04       	bgt	11c6 <e_bgt_3>
+    11c4:	df 10       	movqd	1, r2
+
+000011c6 <e_bgt_3>:
+    11c6:	a2          	nop
+
+000011c7 <t_sgt_3>:
+    11c7:	3c 1b       	sgtb	r3
+
+000011c9 <e_sgt_3>:
+    11c9:	a2          	nop
+
+000011ca <t_ble_0>:
+    11ca:	7a 04       	ble	11ce <e_ble_0>
+    11cc:	df 10       	movqd	1, r2
+
+000011ce <e_ble_0>:
+    11ce:	a2          	nop
+
+000011cf <t_sle_0>:
+    11cf:	bc 1b       	sleb	r3
+
+000011d1 <e_sle_0>:
+    11d1:	a2          	nop
+
+000011d2 <t_ble_1>:
+    11d2:	7a 04       	ble	11d6 <e_ble_1>
+    11d4:	df 10       	movqd	1, r2
+
+000011d6 <e_ble_1>:
+    11d6:	a2          	nop
+
+000011d7 <t_sle_1>:
+    11d7:	bc 1b       	sleb	r3
+
+000011d9 <e_sle_1>:
+    11d9:	a2          	nop
+
+000011da <t_ble_2>:
+    11da:	7a 04       	ble	11de <e_ble_2>
+    11dc:	df 10       	movqd	1, r2
+
+000011de <e_ble_2>:
+    11de:	a2          	nop
+
+000011df <t_sle_2>:
+    11df:	bc 1b       	sleb	r3
+
+000011e1 <e_sle_2>:
+    11e1:	a2          	nop
+
+000011e2 <t_ble_3>:
+    11e2:	7a 04       	ble	11e6 <e_ble_3>
+    11e4:	df 10       	movqd	1, r2
+
+000011e6 <e_ble_3>:
+    11e6:	a2          	nop
+
+000011e7 <t_sle_3>:
+    11e7:	bc 1b       	sleb	r3
+
+000011e9 <e_sle_3>:
+    11e9:	a2          	nop
+
+000011ea <t_bfs_0>:
+    11ea:	8a 04       	bfs	11ee <e_bfs_0>
+    11ec:	df 10       	movqd	1, r2
+
+000011ee <e_bfs_0>:
+    11ee:	a2          	nop
+
+000011ef <t_sfs_0>:
+    11ef:	3c 1c       	sfsb	r3
+
+000011f1 <e_sfs_0>:
+    11f1:	a2          	nop
+
+000011f2 <t_bfs_1>:
+    11f2:	8a 04       	bfs	11f6 <e_bfs_1>
+    11f4:	df 10       	movqd	1, r2
+
+000011f6 <e_bfs_1>:
+    11f6:	a2          	nop
+
+000011f7 <t_sfs_1>:
+    11f7:	3c 1c       	sfsb	r3
+
+000011f9 <e_sfs_1>:
+    11f9:	a2          	nop
+
+000011fa <t_bfs_2>:
+    11fa:	8a 04       	bfs	11fe <e_bfs_2>
+    11fc:	df 10       	movqd	1, r2
+
+000011fe <e_bfs_2>:
+    11fe:	a2          	nop
+
+000011ff <t_sfs_2>:
+    11ff:	3c 1c       	sfsb	r3
+
+00001201 <e_sfs_2>:
+    1201:	a2          	nop
+
+00001202 <t_bfs_3>:
+    1202:	8a 04       	bfs	1206 <e_bfs_3>
+    1204:	df 10       	movqd	1, r2
+
+00001206 <e_bfs_3>:
+    1206:	a2          	nop
+
+00001207 <t_sfs_3>:
+    1207:	3c 1c       	sfsb	r3
+
+00001209 <e_sfs_3>:
+    1209:	a2          	nop
+
+0000120a <t_bfc_0>:
+    120a:	9a 04       	bfc	120e <e_bfc_0>
+    120c:	df 10       	movqd	1, r2
+
+0000120e <e_bfc_0>:
+    120e:	a2          	nop
+
+0000120f <t_sfc_0>:
+    120f:	bc 1c       	sfcb	r3
+
+00001211 <e_sfc_0>:
+    1211:	a2          	nop
+
+00001212 <t_bfc_1>:
+    1212:	9a 04       	bfc	1216 <e_bfc_1>
+    1214:	df 10       	movqd	1, r2
+
+00001216 <e_bfc_1>:
+    1216:	a2          	nop
+
+00001217 <t_sfc_1>:
+    1217:	bc 1c       	sfcb	r3
+
+00001219 <e_sfc_1>:
+    1219:	a2          	nop
+
+0000121a <t_bfc_2>:
+    121a:	9a 04       	bfc	121e <e_bfc_2>
+    121c:	df 10       	movqd	1, r2
+
+0000121e <e_bfc_2>:
+    121e:	a2          	nop
+
+0000121f <t_sfc_2>:
+    121f:	bc 1c       	sfcb	r3
+
+00001221 <e_sfc_2>:
+    1221:	a2          	nop
+
+00001222 <t_bfc_3>:
+    1222:	9a 04       	bfc	1226 <e_bfc_3>
+    1224:	df 10       	movqd	1, r2
+
+00001226 <e_bfc_3>:
+    1226:	a2          	nop
+
+00001227 <t_sfc_3>:
+    1227:	bc 1c       	sfcb	r3
+
+00001229 <e_sfc_3>:
+    1229:	a2          	nop
+
+0000122a <t_blo_0>:
+    122a:	aa 04       	blo	122e <e_blo_0>
+    122c:	df 10       	movqd	1, r2
+
+0000122e <e_blo_0>:
+    122e:	a2          	nop
+
+0000122f <t_slo_0>:
+    122f:	3c 1d       	slob	r3
+
+00001231 <e_slo_0>:
+    1231:	a2          	nop
+
+00001232 <t_blo_1>:
+    1232:	aa 04       	blo	1236 <e_blo_1>
+    1234:	df 10       	movqd	1, r2
+
+00001236 <e_blo_1>:
+    1236:	a2          	nop
+
+00001237 <t_slo_1>:
+    1237:	3c 1d       	slob	r3
+
+00001239 <e_slo_1>:
+    1239:	a2          	nop
+
+0000123a <t_blo_2>:
+    123a:	aa 04       	blo	123e <e_blo_2>
+    123c:	df 10       	movqd	1, r2
+
+0000123e <e_blo_2>:
+    123e:	a2          	nop
+
+0000123f <t_slo_2>:
+    123f:	3c 1d       	slob	r3
+
+00001241 <e_slo_2>:
+    1241:	a2          	nop
+
+00001242 <t_blo_3>:
+    1242:	aa 04       	blo	1246 <e_blo_3>
+    1244:	df 10       	movqd	1, r2
+
+00001246 <e_blo_3>:
+    1246:	a2          	nop
+
+00001247 <t_slo_3>:
+    1247:	3c 1d       	slob	r3
+
+00001249 <e_slo_3>:
+    1249:	a2          	nop
+
+0000124a <t_bhs_0>:
+    124a:	ba 04       	bhs	124e <e_bhs_0>
+    124c:	df 10       	movqd	1, r2
+
+0000124e <e_bhs_0>:
+    124e:	a2          	nop
+
+0000124f <t_shs_0>:
+    124f:	bc 1d       	shsb	r3
+
+00001251 <e_shs_0>:
+    1251:	a2          	nop
+
+00001252 <t_bhs_1>:
+    1252:	ba 04       	bhs	1256 <e_bhs_1>
+    1254:	df 10       	movqd	1, r2
+
+00001256 <e_bhs_1>:
+    1256:	a2          	nop
+
+00001257 <t_shs_1>:
+    1257:	bc 1d       	shsb	r3
+
+00001259 <e_shs_1>:
+    1259:	a2          	nop
+
+0000125a <t_bhs_2>:
+    125a:	ba 04       	bhs	125e <e_bhs_2>
+    125c:	df 10       	movqd	1, r2
+
+0000125e <e_bhs_2>:
+    125e:	a2          	nop
+
+0000125f <t_shs_2>:
+    125f:	bc 1d       	shsb	r3
+
+00001261 <e_shs_2>:
+    1261:	a2          	nop
+
+00001262 <t_bhs_3>:
+    1262:	ba 04       	bhs	1266 <e_bhs_3>
+    1264:	df 10       	movqd	1, r2
+
+00001266 <e_bhs_3>:
+    1266:	a2          	nop
+
+00001267 <t_shs_3>:
+    1267:	bc 1d       	shsb	r3
+
+00001269 <e_shs_3>:
+    1269:	a2          	nop
+
+0000126a <t_blt_0>:
+    126a:	ca 04       	blt	126e <e_blt_0>
+    126c:	df 10       	movqd	1, r2
+
+0000126e <e_blt_0>:
+    126e:	a2          	nop
+
+0000126f <t_slt_0>:
+    126f:	3c 1e       	sltb	r3
+
+00001271 <e_slt_0>:
+    1271:	a2          	nop
+
+00001272 <t_blt_1>:
+    1272:	ca 04       	blt	1276 <e_blt_1>
+    1274:	df 10       	movqd	1, r2
+
+00001276 <e_blt_1>:
+    1276:	a2          	nop
+
+00001277 <t_slt_1>:
+    1277:	3c 1e       	sltb	r3
+
+00001279 <e_slt_1>:
+    1279:	a2          	nop
+
+0000127a <t_blt_2>:
+    127a:	ca 04       	blt	127e <e_blt_2>
+    127c:	df 10       	movqd	1, r2
+
+0000127e <e_blt_2>:
+    127e:	a2          	nop
+
+0000127f <t_slt_2>:
+    127f:	3c 1e       	sltb	r3
+
+00001281 <e_slt_2>:
+    1281:	a2          	nop
+
+00001282 <t_blt_3>:
+    1282:	ca 04       	blt	1286 <e_blt_3>
+    1284:	df 10       	movqd	1, r2
+
+00001286 <e_blt_3>:
+    1286:	a2          	nop
+
+00001287 <t_slt_3>:
+    1287:	3c 1e       	sltb	r3
+
+00001289 <e_slt_3>:
+    1289:	a2          	nop
+
+0000128a <t_bge_0>:
+    128a:	da 04       	bge	128e <e_bge_0>
+    128c:	df 10       	movqd	1, r2
+
+0000128e <e_bge_0>:
+    128e:	a2          	nop
+
+0000128f <t_sge_0>:
+    128f:	bc 1e       	sgeb	r3
+
+00001291 <e_sge_0>:
+    1291:	a2          	nop
+
+00001292 <t_bge_1>:
+    1292:	da 04       	bge	1296 <e_bge_1>
+    1294:	df 10       	movqd	1, r2
+
+00001296 <e_bge_1>:
+    1296:	a2          	nop
+
+00001297 <t_sge_1>:
+    1297:	bc 1e       	sgeb	r3
+
+00001299 <e_sge_1>:
+    1299:	a2          	nop
+
+0000129a <t_bge_2>:
+    129a:	da 04       	bge	129e <e_bge_2>
+    129c:	df 10       	movqd	1, r2
+
+0000129e <e_bge_2>:
+    129e:	a2          	nop
+
+0000129f <t_sge_2>:
+    129f:	bc 1e       	sgeb	r3
+
+000012a1 <e_sge_2>:
+    12a1:	a2          	nop
+
+000012a2 <t_bge_3>:
+    12a2:	da 04       	bge	12a6 <e_bge_3>
+    12a4:	df 10       	movqd	1, r2
+
+000012a6 <e_bge_3>:
+    12a6:	a2          	nop
+
+000012a7 <t_sge_3>:
+    12a7:	bc 1e       	sgeb	r3
+
+000012a9 <e_sge_3>:
+    12a9:	a2          	nop
+
+000012aa <t_movb_imm>:
+    12aa:	14 a0 05    	movb	$5, r0
+
+000012ad <e_movb_imm>:
+    12ad:	a2          	nop
+
+000012ae <t_movw_imm>:
+    12ae:	55 a0 12 34 	movw	$4660, r1
+
+000012b2 <e_movw_imm>:
+    12b2:	a2          	nop
+
+000012b3 <t_movd_imm>:
+    12b3:	97 a0 12 34 	movd	$305419896, r2
+    12b7:	56 78 
+
+000012b9 <e_movd_imm>:
+    12b9:	a2          	nop
+
+000012ba <t_addd_imm>:
+    12ba:	03 a0 00 00 	addd	$5, r0
+    12be:	00 05 
+
+000012c0 <e_addd_imm>:
+    12c0:	a2          	nop
+
+000012c1 <t_cmpb_imm>:
+    12c1:	04 a0 80    	cmpb	$-128, r0
+
+000012c4 <e_cmpb_imm>:
+    12c4:	a2          	nop
+
+000012c5 <t_addb_imm_neg>:
+    12c5:	00 a0 ff    	addb	$-1, r0
+
+000012c8 <e_addb_imm_neg>:
+    12c8:	a2          	nop
+
+000012c9 <t_addw_imm_neg>:
+    12c9:	81 a0 ff fd 	addw	$-3, r2
+
+000012cd <e_addw_imm_neg>:
+    12cd:	a2          	nop
+
+000012ce <t_tbitd_set>:
+    12ce:	77 00       	tbitd	r0, r1
+
+000012d0 <e_tbitd_set>:
+    12d0:	a2          	nop
+
+000012d1 <t_tbitd_clr>:
+    12d1:	77 00       	tbitd	r0, r1
+
+000012d3 <e_tbitd_clr>:
+    12d3:	a2          	nop
+
+000012d4 <t_tbitd_wrap>:
+    12d4:	77 00       	tbitd	r0, r1
+
+000012d6 <e_tbitd_wrap>:
+    12d6:	a2          	nop
+
+000012d7 <t_sbitd_reg>:
+    12d7:	4e 5b 00    	sbitd	r0, r1
+
+000012da <e_sbitd_reg>:
+    12da:	a2          	nop
+
+000012db <t_sbitd_reg_again>:
+    12db:	4e 5b 00    	sbitd	r0, r1
+
+000012de <e_sbitd_reg_again>:
+    12de:	a2          	nop
+
+000012df <t_cbitd_reg>:
+    12df:	4e 4b 00    	cbitd	r0, r1
+
+000012e2 <e_cbitd_reg>:
+    12e2:	a2          	nop
+
+000012e3 <t_ibitd_reg>:
+    12e3:	4e 7b 00    	ibitd	r0, r1
+
+000012e6 <e_ibitd_reg>:
+    12e6:	a2          	nop
+
+000012e7 <t_sbitid_reg>:
+    12e7:	4e 5f 00    	sbitid	r0, r1
+
+000012ea <e_sbitid_reg>:
+    12ea:	a2          	nop
+
+000012eb <t_sbitd_mem>:
+    12eb:	4e 9b 02 00 	sbitd	r0, 0(r2)
+
+000012ef <e_sbitd_mem>:
+    12ef:	a2          	nop
+
+000012f0 <t_cbitd_mem_neg>:
+    12f0:	4e 8b 02 00 	cbitd	r0, 0(r2)
+
+000012f4 <e_cbitd_mem_neg>:
+    12f4:	a2          	nop
+
+000012f5 <t_tbitb_mem>:
+    12f5:	b4 02 00    	tbitb	r0, 0(r2)
+
+000012f8 <e_tbitb_mem>:
+    12f8:	a2          	nop
+
+000012f9 <t_ibitw_mem>:
+    12f9:	4e b9 02 00 	ibitw	r0, 0(r2)
+
+000012fd <e_ibitw_mem>:
+    12fd:	a2          	nop
+
+000012fe <t_seqb_true>:
+    12fe:	3c 08       	seqb	r1
+
+00001300 <e_seqb_true>:
+    1300:	a2          	nop
+
+00001301 <t_seqb_false>:
+    1301:	3c 08       	seqb	r1
+
+00001303 <e_seqb_false>:
+    1303:	a2          	nop
+
+00001304 <t_sned_true>:
+    1304:	bf 08       	sned	r1
+
+00001306 <e_sned_true>:
+    1306:	a2          	nop
+
+00001307 <t_sgtw>:
+    1307:	3d 0b       	sgtw	r1
+
+00001309 <e_sgtw>:
+    1309:	a2          	nop
+
+0000130a <t_slod_true>:
+    130a:	3f 0d       	slod	r1
+
+0000130c <e_slod_true>:
+    130c:	a2          	nop
+
+0000130d <t_slod_false>:
+    130d:	3f 0d       	slod	r1
+
+0000130f <e_slod_false>:
+    130f:	a2          	nop
+
+00001310 <t_shsd_true>:
+    1310:	bf 0d       	shsd	r1
+
+00001312 <e_shsd_true>:
+    1312:	a2          	nop
+
+00001313 <t_sccb>:
+    1313:	bc 09       	sccb	r1
+
+00001315 <e_sccb>:
+    1315:	a2          	nop
+
+00001316 <t_scsb>:
+    1316:	3c 09       	scsb	r1
+
+00001318 <e_scsb>:
+    1318:	a2          	nop
+
+00001319 <t_sfsd>:
+    1319:	3f 0c       	sfsd	r1
+
+0000131b <e_sfsd>:
+    131b:	a2          	nop
+
+0000131c <t_sltd_true>:
+    131c:	3f 0e       	sltd	r1
+
+0000131e <e_sltd_true>:
+    131e:	a2          	nop
+
+0000131f <t_sged_true>:
+    131f:	bf 0e       	sged	r1
+
+00001321 <e_sged_true>:
+    1321:	a2          	nop
+
+00001322 <t_sged_false>:
+    1322:	bf 0e       	sged	r1
+
+00001324 <e_sged_false>:
+    1324:	a2          	nop
+
+00001325 <t_scs_mem>:
+    1325:	3f 51 00    	scsd	0(r2)
+
+00001328 <e_scs_mem>:
+    1328:	a2          	nop
+
+00001329 <t_br_taken>:
+    1329:	ea 04       	but	132d <e_br_taken>
+    132b:	df 10       	movqd	1, r2
+
+0000132d <e_br_taken>:
+    132d:	a2          	nop
+
+0000132e <t_bn_never>:
+    132e:	fa 04       	buf	1332 <e_bn_never>
+    1330:	df 10       	movqd	1, r2
+
+00001332 <e_bn_never>:
+    1332:	a2          	nop
+
+00001333 <t_acbd_loop>:
+    1333:	df 01       	movqd	3, r0
+    1335:	8f 08       	addqd	1, r1
+    1337:	cf 07 7e    	acbd	-1, r0, 1335 <t_acbd_loop+0x2>
+
+0000133a <e_acbd_loop>:
+    133a:	a2          	nop
+
+0000133b <t_acbb_up>:
+    133b:	8f 08       	addqd	1, r1
+    133d:	cc 00 7e    	acbb	1, r0, 133b <t_acbb_up>
+
+00001340 <e_acbb_up>:
+    1340:	a2          	nop
+
+00001341 <t_acbw_wrap>:
+    1341:	8f 08       	addqd	1, r1
+    1343:	cd 00 7e    	acbw	1, r0, 1341 <t_acbw_wrap>
+
+00001346 <e_acbw_wrap>:
+    1346:	a2          	nop
+
+00001347 <t_acbd_zero_start>:
+    1347:	8f 08       	addqd	1, r1
+    1349:	4f 00 7e    	acbd	0, r0, 1347 <t_acbd_zero_start>
+
+0000134c <e_acbd_zero_start>:
+    134c:	a2          	nop
+
+0000134d <t_bsr_ret>:
+    134d:	02 04       	bsr	1351 <t_bsr_ret+0x4>
+    134f:	ea 06       	but	1355 <e_bsr_ret>
+    1351:	df 03       	movqd	7, r0
+    1353:	12 00       	ret	0
+
+00001355 <e_bsr_ret>:
+    1355:	a2          	nop
+
+00001356 <t_ret_pop_args>:
+    1356:	02 04       	bsr	135a <t_ret_pop_args+0x4>
+    1358:	ea 04       	but	135c <e_ret_pop_args>
+    135a:	12 08       	ret	8
+
+0000135c <e_ret_pop_args>:
+    135c:	a2          	nop
+
+0000135d <t_jsr_indirect>:
+    135d:	7f 4e 00    	jsr	0(r1)
+    1360:	ea 06       	but	1366 <e_jsr_indirect>
+
+00001362 <f_jsr1>:
+    1362:	5f 03       	movqd	6, r0
+    1364:	12 00       	ret	0
+
+00001366 <e_jsr_indirect>:
+    1366:	a2          	nop
+
+00001367 <t_jsr_abs>:
+    1367:	7f ae c0 00 	jsr	@4975 <__edata+0x30e5>
+    136b:	13 6f 
+    136d:	ea 06       	but	1373 <e_jsr_abs>
+
+0000136f <f_jsr2>:
+    136f:	df 01       	movqd	3, r0
+    1371:	12 00       	ret	0
+
+00001373 <e_jsr_abs>:
+    1373:	a2          	nop
+
+00001374 <t_jump_indirect>:
+    1374:	7f 4a 00    	jump	0(r1)
+    1377:	df 00       	movqd	1, r0
+
+00001379 <f_jump1>:
+    1379:	5f 19       	movqd	2, r3
+
+0000137b <e_jump_indirect>:
+    137b:	a2          	nop
+
+0000137c <t_cased_fwd>:
+    137c:	7f 17       	cased	r2
+    137e:	df 00       	movqd	1, r0
+
+00001380 <f_case1>:
+    1380:	5f 19       	movqd	2, r3
+
+00001382 <e_cased_fwd>:
+    1382:	a2          	nop
+
+00001383 <t_push_d>:
+    1383:	d7 05       	movd	r0, tos
+
+00001385 <e_push_d>:
+    1385:	a2          	nop
+
+00001386 <t_push_w>:
+    1386:	d5 05       	movw	r0, tos
+
+00001388 <e_push_w>:
+    1388:	a2          	nop
+
+00001389 <t_push_b>:
+    1389:	d4 05       	movb	r0, tos
+
+0000138b <e_push_b>:
+    138b:	a2          	nop
+
+0000138c <t_pop_d>:
+    138c:	57 b8       	movd	tos, r1
+
+0000138e <e_pop_d>:
+    138e:	a2          	nop
+
+0000138f <t_pop_w>:
+    138f:	55 b8       	movw	tos, r1
+
+00001391 <e_pop_w>:
+    1391:	a2          	nop
+
+00001392 <t_tos_rmw_in_place>:
+    1392:	c3 05       	addd	r0, tos
+
+00001394 <e_tos_rmw_in_place>:
+    1394:	a2          	nop
+
+00001395 <t_tos_pop_push>:
+    1395:	d7 bd       	movd	tos, tos
+
+00001397 <e_tos_pop_push>:
+    1397:	a2          	nop
+
+00001398 <t_tos_add_pop>:
+    1398:	03 b8       	addd	tos, r0
+
+0000139a <e_tos_add_pop>:
+    139a:	a2          	nop
+
+0000139b <t_save>:
+    139b:	62 09       	save	[r0,r3]
+
+0000139d <e_save>:
+    139d:	a2          	nop
+
+0000139e <t_restore>:
+    139e:	72 90       	restore	[r0,r3]
+
+000013a0 <e_restore>:
+    13a0:	a2          	nop
+
+000013a1 <t_save_all>:
+    13a1:	62 ff       	save	[r0,r1,r2,r3,r4,r5,r6,r7]
+
+000013a3 <e_save_all>:
+    13a3:	a2          	nop
+
+000013a4 <t_enter>:
+    13a4:	82 18 10    	enter	[r3,r4], 16
+
+000013a7 <e_enter>:
+    13a7:	a2          	nop
+
+000013a8 <t_exit>:
+    13a8:	92 18       	exit	[r3,r4]
+
+000013aa <e_exit>:
+    13aa:	a2          	nop
+
+000013ab <t_enter_exit_roundtrip>:
+    13ab:	82 08 08    	enter	[r3], 8
+    13ae:	df 18       	movqd	1, r3
+    13b0:	92 10       	exit	[r3]
+
+000013b2 <e_enter_exit_roundtrip>:
+    13b2:	a2          	nop
+
+000013b3 <t_adjspd_pos>:
+    13b3:	7f 05       	adjspd	r0
+
+000013b5 <e_adjspd_pos>:
+    13b5:	a2          	nop
+
+000013b6 <t_adjspd_neg>:
+    13b6:	7f 05       	adjspd	r0
+
+000013b8 <e_adjspd_neg>:
+    13b8:	a2          	nop
+
+000013b9 <t_adjspb_neg>:
+    13b9:	7c 05       	adjspb	r0
+
+000013bb <e_adjspb_neg>:
+    13bb:	a2          	nop
+
+000013bc <t_adjspw>:
+    13bc:	7d 05       	adjspw	r0
+
+000013be <e_adjspw>:
+    13be:	a2          	nop
+
+000013bf <t_addr_regrel>:
+    13bf:	67 51 04    	addr	4(r2), r5
+
+000013c2 <e_addr_regrel>:
+    13c2:	a2          	nop
+
+000013c3 <t_addr_regrel_neg>:
+    13c3:	67 51 7c    	addr	-4(r2), r5
+
+000013c6 <e_addr_regrel_neg>:
+    13c6:	a2          	nop
+
+000013c7 <t_addr_regrel_16>:
+    13c7:	67 51 81 2c 	addr	300(r2), r5
+
+000013cb <e_addr_regrel_16>:
+    13cb:	a2          	nop
+
+000013cc <t_addr_regrel_32>:
+    13cc:	67 51 c0 06 	addr	400000(r2), r5
+    13d0:	1a 80 
+
+000013d2 <e_addr_regrel_32>:
+    13d2:	a2          	nop
+
+000013d3 <t_addr_fp>:
+    13d3:	67 c1 0c    	addr	12(fp), r5
+
+000013d6 <e_addr_fp>:
+    13d6:	a2          	nop
+
+000013d7 <t_addr_sp>:
+    13d7:	67 c9 0c    	addr	12(sp), r5
+
+000013da <e_addr_sp>:
+    13da:	a2          	nop
+
+000013db <t_addr_sb>:
+    13db:	67 d1 0c    	addr	12(sb), r5
+
+000013de <e_addr_sb>:
+    13de:	a2          	nop
+
+000013df <t_addr_memrel_fp>:
+    13df:	67 81 04 08 	addr	8(4(fp)), r5
+
+000013e3 <e_addr_memrel_fp>:
+    13e3:	a2          	nop
+
+000013e4 <t_addr_memrel_sp>:
+    13e4:	67 89 04 08 	addr	8(4(sp)), r5
+
+000013e8 <e_addr_memrel_sp>:
+    13e8:	a2          	nop
+
+000013e9 <t_addr_memrel_sb>:
+    13e9:	67 91 04 08 	addr	8(4(sb)), r5
+
+000013ed <e_addr_memrel_sb>:
+    13ed:	a2          	nop
+
+000013ee <t_addr_memrel_neg>:
+    13ee:	67 81 7c 78 	addr	-8(-4(fp)), r5
+
+000013f2 <e_addr_memrel_neg>:
+    13f2:	a2          	nop
+
+000013f3 <t_addr_abs>:
+    13f3:	67 a9 c0 01 	addr	@74565 <__edata+0x72cd5>, r5
+    13f7:	23 45 
+
+000013f9 <e_addr_abs>:
+    13f9:	a2          	nop
+
+000013fa <t_addr_ext>:
+    13fa:	67 b1 01 08 	addr	EXT(1) + 8, r5
+
+000013fe <e_addr_ext>:
+    13fe:	a2          	nop
+
+000013ff <t_addr_index_d>:
+    13ff:	67 f1 51 04 	addr	4(r2)[r1:d], r5
+
+00001403 <e_addr_index_d>:
+    1403:	a2          	nop
+
+00001404 <t_addr_index_b>:
+    1404:	67 e1 51 04 	addr	4(r2)[r1:b], r5
+
+00001408 <e_addr_index_b>:
+    1408:	a2          	nop
+
+00001409 <t_addr_index_w>:
+    1409:	67 e9 51 04 	addr	4(r2)[r1:w], r5
+
+0000140d <e_addr_index_w>:
+    140d:	a2          	nop
+
+0000140e <t_addr_index_q>:
+    140e:	67 f9 51 04 	addr	4(r2)[r1:q], r5
+
+00001412 <e_addr_index_q>:
+    1412:	a2          	nop
+
+00001413 <t_addr_index_abs>:
+    1413:	67 f1 a9 81 	addr	@256 <__DYNAMIC+0x256>[r1:d], r5
+    1417:	00 
+
+00001418 <e_addr_index_abs>:
+    1418:	a2          	nop
+
+00001419 <t_addr_index_memrel>:
+    1419:	67 f1 81 04 	addr	8(4(fp))[r1:d], r5
+    141d:	08 
+
+0000141e <e_addr_index_memrel>:
+    141e:	a2          	nop
+
+0000141f <t_addr_index_neg>:
+    141f:	67 f1 51 00 	addr	0(r2)[r1:d], r5
+
+00001423 <e_addr_index_neg>:
+    1423:	a2          	nop
+
+00001424 <t_addr_pc>:
+    1424:	67 d9 0a    	addr	142e <t_addr_index_double+0x2>, r5
+
+00001427 <e_addr_pc>:
+    1427:	a2          	nop
+
+00001428 <t_addr_pc_neg>:
+    1428:	67 d9 76    	addr	141e <e_addr_index_memrel>, r5
+
+0000142b <e_addr_pc_neg>:
+    142b:	a2          	nop
+
+0000142c <t_addr_index_double>:
+    142c:	67 f1 51 00 	addr	0(r2)[r1:d], r5
+
+00001430 <e_addr_index_double>:
+    1430:	a2          	nop
+
+00001431 <t_load_regrel>:
+    1431:	57 50 04    	movd	4(r2), r1
+
+00001434 <e_load_regrel>:
+    1434:	a2          	nop
+
+00001435 <t_store_regrel>:
+    1435:	97 0a 08    	movd	r1, 8(r2)
+
+00001438 <e_store_regrel>:
+    1438:	a2          	nop
+
+00001439 <t_load_memrel>:
+    1439:	57 80 04 08 	movd	8(4(fp)), r1
+
+0000143d <e_load_memrel>:
+    143d:	a2          	nop
+
+0000143e <t_store_abs>:
+    143e:	57 0d c0 02 	movd	r1, @131072 <__edata+0x12f7e2>
+    1442:	00 00 
+
+00001444 <e_store_abs>:
+    1444:	a2          	nop
+
+00001445 <t_load_abs_b>:
+    1445:	54 a8 c0 02 	movb	@131072 <__edata+0x12f7e2>, r1
+    1449:	00 00 
+
+0000144b <e_load_abs_b>:
+    144b:	a2          	nop
+
+0000144c <t_load_index_w>:
+    144c:	d5 e8 51 00 	movw	0(r2)[r1:w], r3
+
+00001450 <e_load_index_w>:
+    1450:	a2          	nop
+
+00001451 <t_store_index_b>:
+    1451:	14 1f 51 00 	movb	r3, 0(r2)[r1:b]
+
+00001455 <e_store_index_b>:
+    1455:	a2          	nop
+
+00001456 <t_load_ext>:
+    1456:	57 b0 02 04 	movd	EXT(2) + 4, r1
+
+0000145a <e_load_ext>:
+    145a:	a2          	nop
+
+0000145b <t_mem_to_mem>:
+    145b:	97 4a 00 00 	movd	0(r1), 0(r2)
+
+0000145f <e_mem_to_mem>:
+    145f:	a2          	nop
+
+00001460 <t_add_mem_dst>:
+    1460:	43 02 00    	addd	r0, 0(r1)
+
+00001463 <e_add_mem_dst>:
+    1463:	a2          	nop
+
+00001464 <t_sub_mem_src>:
+    1464:	23 48 00    	subd	0(r1), r0
+
+00001467 <e_sub_mem_src>:
+    1467:	a2          	nop
+
+00001468 <t_memrel_fp_store>:
+    1468:	14 04 08 02 	movb	r0, 2(8(fp))
+
+0000146c <e_memrel_fp_store>:
+    146c:	a2          	nop
+
+0000146d <t_movsb_fwd>:
+    146d:	0e 00 00    	movsb	[]
+
+00001470 <e_movsb_fwd>:
+    1470:	a2          	nop
+
+00001471 <t_movsb_zero>:
+    1471:	0e 00 00    	movsb	[]
+
+00001474 <e_movsb_zero>:
+    1474:	a2          	nop
+
+00001475 <t_movsw_fwd>:
+    1475:	0e 01 00    	movsw	[]
+
+00001478 <e_movsw_fwd>:
+    1478:	a2          	nop
+
+00001479 <t_movsd_bwd>:
+    1479:	0e 03 01    	movsd	[b]
+
+0000147c <e_movsd_bwd>:
+    147c:	a2          	nop
+
+0000147d <t_movsb_while>:
+    147d:	0e 00 02    	movsb	[w]
+
+00001480 <e_movsb_while>:
+    1480:	a2          	nop
+
+00001481 <t_movsb_until>:
+    1481:	0e 00 06    	movsb	[u]
+
+00001484 <e_movsb_until>:
+    1484:	a2          	nop
+
+00001485 <t_movsb_until_nomatch>:
+    1485:	0e 00 06    	movsb	[u]
+
+00001488 <e_movsb_until_nomatch>:
+    1488:	a2          	nop
+
+00001489 <t_movsb_while_all>:
+    1489:	0e 00 02    	movsb	[w]
+
+0000148c <e_movsb_while_all>:
+    148c:	a2          	nop
+
+0000148d <t_movsb_while_bwd>:
+    148d:	0e 00 03    	movsb	[b,w]
+
+00001490 <e_movsb_while_bwd>:
+    1490:	a2          	nop
+
+00001491 <t_movst_translate>:
+    1491:	0e 80 00    	movst	[]
+
+00001494 <e_movst_translate>:
+    1494:	a2          	nop
+
+00001495 <t_cmpsb_equal>:
+    1495:	0e 04 00    	cmpsb	[]
+
+00001498 <e_cmpsb_equal>:
+    1498:	a2          	nop
+
+00001499 <t_cmpsb_less>:
+    1499:	0e 04 00    	cmpsb	[]
+
+0000149c <e_cmpsb_less>:
+    149c:	a2          	nop
+
+0000149d <t_cmpsb_greater>:
+    149d:	0e 04 00    	cmpsb	[]
+
+000014a0 <e_cmpsb_greater>:
+    14a0:	a2          	nop
+
+000014a1 <t_cmpsb_first_differs>:
+    14a1:	0e 04 00    	cmpsb	[]
+
+000014a4 <e_cmpsb_first_differs>:
+    14a4:	a2          	nop
+
+000014a5 <t_cmpsb_signed_unsigned>:
+    14a5:	0e 04 00    	cmpsb	[]
+
+000014a8 <e_cmpsb_signed_unsigned>:
+    14a8:	a2          	nop
+
+000014a9 <t_cmpsb_until>:
+    14a9:	0e 04 06    	cmpsb	[u]
+
+000014ac <e_cmpsb_until>:
+    14ac:	a2          	nop
+
+000014ad <t_cmpsd_equal>:
+    14ad:	0e 07 00    	cmpsd	[]
+
+000014b0 <e_cmpsd_equal>:
+    14b0:	a2          	nop
+
+000014b1 <t_skpsb_until>:
+    14b1:	0e 0c 06    	skpsb	[u]
+
+000014b4 <e_skpsb_until>:
+    14b4:	a2          	nop
+
+000014b5 <t_skpsb_nomatch>:
+    14b5:	0e 0c 06    	skpsb	[u]
+
+000014b8 <e_skpsb_nomatch>:
+    14b8:	a2          	nop
+
+000014b9 <t_skpsb_while>:
+    14b9:	0e 0c 02    	skpsb	[w]
+
+000014bc <e_skpsb_while>:
+    14bc:	a2          	nop
+
+000014bd <t_movmb>:
+    14bd:	ce 80 4a 00 	movmb	0(r1), 0(r2), 5
+    14c1:	00 04 
+
+000014c3 <e_movmb>:
+    14c3:	a2          	nop
+
+000014c4 <t_movmw>:
+    14c4:	ce 81 4a 00 	movmw	0(r1), 0(r2), 3
+    14c8:	00 04 
+
+000014ca <e_movmw>:
+    14ca:	a2          	nop
+
+000014cb <t_movmd>:
+    14cb:	ce 83 4a 00 	movmd	0(r1), 0(r2), 2
+    14cf:	00 04 
+
+000014d1 <e_movmd>:
+    14d1:	a2          	nop
+
+000014d2 <t_cmpmb_equal>:
+    14d2:	ce 84 4a 00 	cmpmb	0(r1), 0(r2), 4
+    14d6:	00 03 
+
+000014d8 <e_cmpmb_equal>:
+    14d8:	a2          	nop
+
+000014d9 <t_cmpmb_less>:
+    14d9:	ce 84 4a 00 	cmpmb	0(r1), 0(r2), 4
+    14dd:	00 03 
+
+000014df <e_cmpmb_less>:
+    14df:	a2          	nop
+
+000014e0 <t_cmpmb_greater>:
+    14e0:	ce 84 4a 00 	cmpmb	0(r1), 0(r2), 4
+    14e4:	00 03 
+
+000014e6 <e_cmpmb_greater>:
+    14e6:	a2          	nop
+
+000014e7 <t_cmpmd_signed_unsigned>:
+    14e7:	ce 87 4a 00 	cmpmd	0(r1), 0(r2), 1
+    14eb:	00 00 
+
+000014ed <e_cmpmd_signed_unsigned>:
+    14ed:	a2          	nop
+
+000014ee <t_movsud>:
+    14ee:	ae 8f 4a 00 	movsud	0(r1), 0(r2)
+    14f2:	00 
+
+000014f3 <e_movsud>:
+    14f3:	a2          	nop
+
+000014f4 <t_movusb>:
+    14f4:	ae 9c 4a 00 	movusb	0(r1), 0(r2)
+    14f8:	00 
+
+000014f9 <e_movusb>:
+    14f9:	a2          	nop
+
+000014fa <t_extsd_reg>:
+    14fa:	ce 4f 00 63 	extsd	r0, r1, 3, 4
+
+000014fe <e_extsd_reg>:
+    14fe:	a2          	nop
+
+000014ff <t_extsd_len32>:
+    14ff:	ce 4f 00 1f 	extsd	r0, r1, 0, 32
+
+00001503 <e_extsd_len32>:
+    1503:	a2          	nop
+
+00001504 <t_extsb_dst_byte>:
+    1504:	ce 4c 00 02 	extsb	r0, r1, 0, 3
+
+00001508 <e_extsb_dst_byte>:
+    1508:	a2          	nop
+
+00001509 <t_extsw_off5>:
+    1509:	ce 4d 00 a7 	extsw	r0, r1, 5, 8
+
+0000150d <e_extsw_off5>:
+    150d:	a2          	nop
+
+0000150e <t_extsd_mem>:
+    150e:	ce 4f 50 00 	extsd	0(r2), r1, 2, 6
+    1512:	45 
+
+00001513 <e_extsd_mem>:
+    1513:	a2          	nop
+
+00001514 <t_inssd_reg>:
+    1514:	ce 4b 00 63 	inssd	r0, r1, 3, 4
+
+00001518 <e_inssd_reg>:
+    1518:	a2          	nop
+
+00001519 <t_inssd_mem>:
+    1519:	ce 8b 02 00 	inssd	r0, 0(r2), 0, 8
+    151d:	07 
+
+0000151e <e_inssd_mem>:
+    151e:	a2          	nop
+
+0000151f <t_extd_reg>:
+    151f:	2e 83 08 03 	extd	r0, r1, r2, 3
+
+00001523 <e_extd_reg>:
+    1523:	a2          	nop
+
+00001524 <t_extd_mem>:
+    1524:	2e 83 48 00 	extd	r0, 0(r1), r2, 4
+    1528:	04 
+
+00001529 <e_extd_mem>:
+    1529:	a2          	nop
+
+0000152a <t_extd_len32>:
+    152a:	2e 83 08 20 	extd	r0, r1, r2, 32
+
+0000152e <e_extd_len32>:
+    152e:	a2          	nop
+
+0000152f <t_insd_reg>:
+    152f:	ae 53 00 08 	insd	r2, r0, r1, 8
+
+00001533 <e_insd_reg>:
+    1533:	a2          	nop
+
+00001534 <t_insd_mem>:
+    1534:	ae 53 02 00 	insd	r2, r0, 0(r1), 4
+    1538:	04 
+
+00001539 <e_insd_mem>:
+    1539:	a2          	nop
+
+0000153a <t_cvtp>:
+    153a:	6e cb 50 00 	cvtp	r1, 0(r2), r3
+
+0000153e <e_cvtp>:
+    153e:	a2          	nop
+
+0000153f <t_indexd>:
+    153f:	2e 87 08    	indexd	r0, r1, r2
+
+00001542 <e_indexd>:
+    1542:	a2          	nop
+
+00001543 <t_checkd_in>:
+    1543:	ee 83 48 00 	checkd	r0, 0(r1), r2
+
+00001547 <e_checkd_in>:
+    1547:	a2          	nop
+
+00001548 <t_checkd_above>:
+    1548:	ee 83 48 00 	checkd	r0, 0(r1), r2
+
+0000154c <e_checkd_above>:
+    154c:	a2          	nop
+
+0000154d <t_checkd_below>:
+    154d:	ee 83 48 00 	checkd	r0, 0(r1), r2
+
+00001551 <e_checkd_below>:
+    1551:	a2          	nop
+
+00001552 <t_checkd_edge_lo>:
+    1552:	ee 83 48 00 	checkd	r0, 0(r1), r2
+
+00001556 <e_checkd_edge_lo>:
+    1556:	a2          	nop
+
+00001557 <t_checkb_signed>:
+    1557:	ee 80 48 00 	checkb	r0, 0(r1), r2
+
+0000155b <e_checkb_signed>:
+    155b:	a2          	nop
+
+0000155c <t_ffsd_first>:
+    155c:	6e 47 00    	ffsd	r0, r1
+
+0000155f <e_ffsd_first>:
+    155f:	a2          	nop
+
+00001560 <t_ffsd_from4>:
+    1560:	6e 47 00    	ffsd	r0, r1
+
+00001563 <e_ffsd_from4>:
+    1563:	a2          	nop
+
+00001564 <t_ffsd_none>:
+    1564:	6e 47 00    	ffsd	r0, r1
+
+00001567 <e_ffsd_none>:
+    1567:	a2          	nop
+
+00001568 <t_ffsb_top>:
+    1568:	6e 44 00    	ffsb	r0, r1
+
+0000156b <e_ffsb_top>:
+    156b:	a2          	nop
+
+0000156c <t_ffsb_none_high>:
+    156c:	6e 44 00    	ffsb	r0, r1
+
+0000156f <e_ffsb_none_high>:
+    156f:	a2          	nop
+
+00001570 <t_addpb>:
+    1570:	4e 7c 00    	addpb	r0, r1
+
+00001573 <e_addpb>:
+    1573:	a2          	nop
+
+00001574 <t_addpb_carry_out>:
+    1574:	4e 7c 00    	addpb	r0, r1
+
+00001577 <e_addpb_carry_out>:
+    1577:	a2          	nop
+
+00001578 <t_addpb_carry_in>:
+    1578:	4e 7c 00    	addpb	r0, r1
+
+0000157b <e_addpb_carry_in>:
+    157b:	a2          	nop
+
+0000157c <t_addpd>:
+    157c:	4e 7f 00    	addpd	r0, r1
+
+0000157f <e_addpd>:
+    157f:	a2          	nop
+
+00001580 <t_subpb>:
+    1580:	4e 6c 00    	subpb	r0, r1
+
+00001583 <e_subpb>:
+    1583:	a2          	nop
+
+00001584 <t_subpb_borrow>:
+    1584:	4e 6c 00    	subpb	r0, r1
+
+00001587 <e_subpb_borrow>:
+    1587:	a2          	nop
+
+00001588 <t_subpw>:
+    1588:	4e 6d 00    	subpw	r0, r1
+
+0000158b <e_subpw>:
+    158b:	a2          	nop
+
+0000158c <t_sprd_fp>:
+    158c:	2f 14       	sprd	fp, r2
+
+0000158e <e_sprd_fp>:
+    158e:	a2          	nop
+
+0000158f <t_sprb_fp>:
+    158f:	2c 14       	sprb	fp, r2
+
+00001591 <e_sprb_fp>:
+    1591:	a2          	nop
+
+00001592 <t_sprw_sb>:
+    1592:	2d 15       	sprw	sb, r2
+
+00001594 <e_sprw_sb>:
+    1594:	a2          	nop
+
+00001595 <t_lprd_sb>:
+    1595:	6f 25       	lprd	sb, r4
+
+00001597 <e_lprd_sb>:
+    1597:	a2          	nop
+
+00001598 <t_lprd_fp>:
+    1598:	6f 24       	lprd	fp, r4
+
+0000159a <e_lprd_fp>:
+    159a:	a2          	nop
+
+0000159b <t_lprb_fp>:
+    159b:	6c 24       	lprb	fp, r4
+
+0000159d <e_lprb_fp>:
+    159d:	a2          	nop
+
+0000159e <t_sprd_sp>:
+    159e:	af 24       	sprd	sp, r4
+
+000015a0 <e_sprd_sp>:
+    15a0:	a2          	nop
+
+000015a1 <t_lprd_sp>:
+    15a1:	ef 24       	lprd	sp, r4
+
+000015a3 <e_lprd_sp>:
+    15a3:	a2          	nop
+
+000015a4 <t_lprd_intbase>:
+    15a4:	6f 0f       	lprd	intbase, r1
+
+000015a6 <e_lprd_intbase>:
+    15a6:	a2          	nop
+
+000015a7 <t_sprd_intbase>:
+    15a7:	2f 0f       	sprd	intbase, r1
+
+000015a9 <e_sprd_intbase>:
+    15a9:	a2          	nop
+
+000015aa <t_lprw_mod>:
+    15aa:	ed 0f       	lprw	mod, r1
+
+000015ac <e_lprw_mod>:
+    15ac:	a2          	nop
+
+000015ad <t_sprw_mod>:
+    15ad:	ad 0f       	sprw	mod, r1
+
+000015af <e_sprw_mod>:
+    15af:	a2          	nop
+
+000015b0 <t_sprd_mod>:
+    15b0:	af 0f       	sprd	mod, r1
+
+000015b2 <e_sprd_mod>:
+    15b2:	a2          	nop
+
+000015b3 <t_lprb_upsr>:
+    15b3:	6c 00       	lprb	us, r0
+
+000015b5 <e_lprb_upsr>:
+    15b5:	a2          	nop
+
+000015b6 <t_lprb_upsr_clear>:
+    15b6:	6c 00       	lprb	us, r0
+
+000015b8 <e_lprb_upsr_clear>:
+    15b8:	a2          	nop
+
+000015b9 <t_sprb_upsr>:
+    15b9:	2c 08       	sprb	us, r1
+
+000015bb <e_sprb_upsr>:
+    15bb:	a2          	nop
+
+000015bc <t_sprw_psr_all>:
+    15bc:	ad 0e       	sprw	psr, r1
+
+000015be <e_sprw_psr_all>:
+    15be:	a2          	nop
+
+000015bf <t_lprw_psr_super>:
+    15bf:	ed 06       	lprw	psr, r0
+
+000015c1 <e_lprw_psr_super>:
+    15c1:	a2          	nop
+
+000015c2 <t_lprw_psr_s_swap>:
+    15c2:	ed 06       	lprw	psr, r0
+
+000015c4 <e_lprw_psr_s_swap>:
+    15c4:	a2          	nop
+
+000015c5 <t_lprw_psr_s_swap_back>:
+    15c5:	ed 06       	lprw	psr, r0
+
+000015c7 <e_lprw_psr_s_swap_back>:
+    15c7:	a2          	nop
+
+000015c8 <t_lprw_psr_s_same>:
+    15c8:	ed 06       	lprw	psr, r0
+
+000015ca <e_lprw_psr_s_same>:
+    15ca:	a2          	nop
+
+000015cb <t_bispsrw_set>:
+    15cb:	7d 03       	bispsrw	r0
+
+000015cd <e_bispsrw_set>:
+    15cd:	a2          	nop
+
+000015ce <t_bispsrb_set_flags_only>:
+    15ce:	7c 03       	bispsrb	r0
+
+000015d0 <e_bispsrb_set_flags_only>:
+    15d0:	a2          	nop
+
+000015d1 <t_bicpsrw_clear>:
+    15d1:	7d 01       	bicpsrw	r0
+
+000015d3 <e_bicpsrw_clear>:
+    15d3:	a2          	nop
+
+000015d4 <t_bicpsrb_clear>:
+    15d4:	7c 01       	bicpsrb	r0
+
+000015d6 <e_bicpsrb_clear>:
+    15d6:	a2          	nop
+
+000015d7 <t_bispsrw_s_swap>:
+    15d7:	7d 03       	bispsrw	r0
+
+000015d9 <e_bispsrw_s_swap>:
+    15d9:	a2          	nop
+
+000015da <t_bicpsrw_s_swap>:
+    15da:	7d 01       	bicpsrw	r0
+
+000015dc <e_bicpsrw_s_swap>:
+    15dc:	a2          	nop
+
+000015dd <t_cxp_rxp>:
+    15dd:	22 01       	cxp	15de <t_cxp_rxp+0x1>
+    15df:	ea 08       	but	15e7 <e_cxp_rxp>
+
+000015e1 <f_cxp1>:
+    15e1:	2f 2d       	sprd	sb, r5
+    15e3:	ad 37       	sprw	mod, r6
+    15e5:	32 00       	rxp	0
+
+000015e7 <e_cxp_rxp>:
+    15e7:	a2          	nop
+
+000015e8 <t_cxp_rxp_args>:
+    15e8:	22 01       	cxp	15e9 <t_cxp_rxp_args+0x1>
+    15ea:	ea 04       	but	15ee <e_cxp_rxp_args>
+
+000015ec <f_cxp2>:
+    15ec:	32 08       	rxp	8
+
+000015ee <e_cxp_rxp_args>:
+    15ee:	a2          	nop
+
+000015ef <t_cxpd_rxp>:
+    15ef:	7f 58 00    	cxpd	0(r3)
+    15f2:	ea 06       	but	15f8 <e_cxpd_rxp>
+
+000015f4 <f_cxpd1>:
+    15f4:	2f 2d       	sprd	sb, r5
+    15f6:	32 00       	rxp	0
+
+000015f8 <e_cxpd_rxp>:
+    15f8:	a2          	nop
+
+000015f9 <t_rett>:
+    15f9:	42 00       	rett	0
+
+000015fb <e_rett>:
+    15fb:	a2          	nop
+
+000015fc <t_rett_args>:
+    15fc:	42 08       	rett	8
+
+000015fe <e_rett_args>:
+    15fe:	a2          	nop
+
+000015ff <t_rett_stack_swap>:
+    15ff:	42 00       	rett	0
+
+00001601 <e_rett_stack_swap>:
+    1601:	a2          	nop
+
+00001602 <t_addf>:
+    1602:	be 41 00    	addf	f0, f1
+
+00001605 <e_addf>:
+    1605:	a2          	nop
+
+00001606 <t_subf>:
+    1606:	be 51 00    	subf	f0, f1
+
+00001609 <e_subf>:
+    1609:	a2          	nop
+
+0000160a <t_mulf>:
+    160a:	be 71 00    	mulf	f0, f1
+
+0000160d <e_mulf>:
+    160d:	a2          	nop
+
+0000160e <t_divf>:
+    160e:	be 61 00    	divf	f0, f1
+
+00001611 <e_divf>:
+    1611:	a2          	nop
+
+00001612 <t_negf>:
+    1612:	be 55 00    	negf	f0, f1
+
+00001615 <e_negf>:
+    1615:	a2          	nop
+
+00001616 <t_absf>:
+    1616:	be 75 00    	absf	f0, f1
+
+00001619 <e_absf>:
+    1619:	a2          	nop
+
+0000161a <t_movf>:
+    161a:	be 45 00    	movf	f0, f1
+
+0000161d <e_movf>:
+    161d:	a2          	nop
+
+0000161e <t_cmpf_less>:
+    161e:	be 49 00    	cmpf	f0, f1
+
+00001621 <e_cmpf_less>:
+    1621:	a2          	nop
+
+00001622 <t_cmpf_greater>:
+    1622:	be 49 00    	cmpf	f0, f1
+
+00001625 <e_cmpf_greater>:
+    1625:	a2          	nop
+
+00001626 <t_cmpf_equal>:
+    1626:	be 49 00    	cmpf	f0, f1
+
+00001629 <e_cmpf_equal>:
+    1629:	a2          	nop
+
+0000162a <t_cmpf_negative>:
+    162a:	be 49 00    	cmpf	f0, f1
+
+0000162d <e_cmpf_negative>:
+    162d:	a2          	nop
+
+0000162e <t_movbf>:
+    162e:	3e 44 00    	movbf	r0, f1
+
+00001631 <e_movbf>:
+    1631:	a2          	nop
+
+00001632 <t_movwf>:
+    1632:	3e 45 00    	movwf	r0, f1
+
+00001635 <e_movwf>:
+    1635:	a2          	nop
+
+00001636 <t_movdf>:
+    1636:	3e 47 00    	movdf	r0, f1
+
+00001639 <e_movdf>:
+    1639:	a2          	nop
+
+0000163a <t_truncfd_pos>:
+    163a:	3e 6f 00    	truncfd	f0, r1
+
+0000163d <e_truncfd_pos>:
+    163d:	a2          	nop
+
+0000163e <t_truncfd_neg>:
+    163e:	3e 6f 00    	truncfd	f0, r1
+
+00001641 <e_truncfd_neg>:
+    1641:	a2          	nop
+
+00001642 <t_roundfd_tie_even_down>:
+    1642:	3e 67 00    	roundfd	f0, r1
+
+00001645 <e_roundfd_tie_even_down>:
+    1645:	a2          	nop
+
+00001646 <t_roundfd_tie_even_up>:
+    1646:	3e 67 00    	roundfd	f0, r1
+
+00001649 <e_roundfd_tie_even_up>:
+    1649:	a2          	nop
+
+0000164a <t_roundfd_up>:
+    164a:	3e 67 00    	roundfd	f0, r1
+
+0000164d <e_roundfd_up>:
+    164d:	a2          	nop
+
+0000164e <t_roundfd_down>:
+    164e:	3e 67 00    	roundfd	f0, r1
+
+00001651 <e_roundfd_down>:
+    1651:	a2          	nop
+
+00001652 <t_roundfd_neg_tie>:
+    1652:	3e 67 00    	roundfd	f0, r1
+
+00001655 <e_roundfd_neg_tie>:
+    1655:	a2          	nop
+
+00001656 <t_roundfd_neg_tie2>:
+    1656:	3e 67 00    	roundfd	f0, r1
+
+00001659 <e_roundfd_neg_tie2>:
+    1659:	a2          	nop
+
+0000165a <t_roundfd_half>:
+    165a:	3e 67 00    	roundfd	f0, r1
+
+0000165d <e_roundfd_half>:
+    165d:	a2          	nop
+
+0000165e <t_roundfd_one_half>:
+    165e:	3e 67 00    	roundfd	f0, r1
+
+00001661 <e_roundfd_one_half>:
+    1661:	a2          	nop
+
+00001662 <t_floorfd_pos>:
+    1662:	3e 7f 00    	floorfd	f0, r1
+
+00001665 <e_floorfd_pos>:
+    1665:	a2          	nop
+
+00001666 <t_floorfd_neg>:
+    1666:	3e 7f 00    	floorfd	f0, r1
+
+00001669 <e_floorfd_neg>:
+    1669:	a2          	nop
+
+0000166a <t_floorfd_negint>:
+    166a:	3e 7f 00    	floorfd	f0, r1
+
+0000166d <e_floorfd_negint>:
+    166d:	a2          	nop
+
+0000166e <t_lfsr_sfsr>:
+    166e:	3e 0f 00    	lfsr	r0
+    1671:	3e 77 00    	sfsr	r1
+
+00001674 <e_lfsr_sfsr>:
+    1674:	a2          	nop
+
+00001675 <t_addf_mem>:
+    1675:	be 41 c0 04 	addf	4(fp), f1
+
+00001679 <e_addf_mem>:
+    1679:	a2          	nop
+
+0000167a <t_movf_store>:
+    167a:	be 85 02 08 	movf	f0, 8(r2)
+
+0000167e <e_movf_store>:
+    167e:	a2          	nop
+
+0000167f <t_movf_imm>:
+    167f:	be 05 a0 3f 	movf	$1.5, f0
+    1683:	c0 00 00 
+
+00001686 <e_movf_imm>:
+    1686:	a2          	nop
+
+00001687 <t_movbf_mem>:
+    1687:	3e c4 50 00 	movbf	0(r2), f3
+
+0000168b <e_movbf_mem>:
+    168b:	a2          	nop
+
+0000168c <t_movf_tos>:
+    168c:	be c5 05    	movf	f0, tos
+
+0000168f <e_movf_tos>:
+    168f:	a2          	nop
+
+00001690 <t_XFAIL_addd_wrong_result>:
+    1690:	43 00       	addd	r0, r1
+
+00001692 <e_XFAIL_addd_wrong_result>:
+    1692:	a2          	nop
+
+00001693 <t_XFAIL_wrong_flag>:
+    1693:	47 00       	cmpd	r0, r1
+
+00001695 <e_XFAIL_wrong_flag>:
+    1695:	a2          	nop
+
+00001696 <t_XFAIL_wrong_memory>:
+    1696:	57 02 00    	movd	r0, 0(r1)
+
+00001699 <e_XFAIL_wrong_memory>:
+    1699:	a2          	nop
+
+0000169a <t_l_addl>:
+    169a:	be 40 00    	addl	f0, f1
+
+0000169d <e_l_addl>:
+    169d:	a2          	nop
+
+0000169e <t_l_subl_odd>:
+    169e:	be d0 08    	subl	f1, f3
+
+000016a1 <e_l_subl_odd>:
+    16a1:	a2          	nop
+
+000016a2 <t_l_mull_odd>:
+    16a2:	be 70 19    	mull	f3, f5
+
+000016a5 <e_l_mull_odd>:
+    16a5:	a2          	nop
+
+000016a6 <t_l_divl>:
+    16a6:	be e0 01    	divl	f0, f7
+
+000016a9 <e_l_divl>:
+    16a9:	a2          	nop
+
+000016aa <t_l_negl>:
+    16aa:	be 54 19    	negl	f3, f5
+
+000016ad <e_l_negl>:
+    16ad:	a2          	nop
+
+000016ae <t_l_absl>:
+    16ae:	be 74 19    	absl	f3, f5
+
+000016b1 <e_l_absl>:
+    16b1:	a2          	nop
+
+000016b2 <t_l_movl_odd>:
+    16b2:	be c4 19    	movl	f3, f7
+
+000016b5 <e_l_movl_odd>:
+    16b5:	a2          	nop
+
+000016b6 <t_l_cmpl_greater>:
+    16b6:	be c8 08    	cmpl	f1, f3
+
+000016b9 <e_l_cmpl_greater>:
+    16b9:	a2          	nop
+
+000016ba <t_l_cmpl_equal>:
+    16ba:	be c8 29    	cmpl	f5, f7
+
+000016bd <e_l_cmpl_equal>:
+    16bd:	a2          	nop
+
+000016be <t_f_low_half>:
+    16be:	be 81 08    	addf	f1, f2
+
+000016c1 <e_f_low_half>:
+    16c1:	a2          	nop
+
+000016c2 <t_f_independent>:
+    16c2:	be 85 08    	movf	f1, f2
+
+000016c5 <e_f_independent>:
+    16c5:	a2          	nop
+
+000016c6 <t_l_movdl>:
+    16c6:	3e 43 01    	movdl	r0, f5
+
+000016c9 <e_l_movdl>:
+    16c9:	a2          	nop
+
+000016ca <t_l_movfl>:
+    16ca:	3e db 08    	movfl	f1, f3
+
+000016cd <e_l_movfl>:
+    16cd:	a2          	nop
+
+000016ce <t_l_movlf>:
+    16ce:	3e 56 18    	movlf	f3, f1
+
+000016d1 <e_l_movlf>:
+    16d1:	a2          	nop
+
+000016d2 <t_l_trunclb>:
+    16d2:	3e 68 18    	trunclb	f3, r1
+
+000016d5 <e_l_trunclb>:
+    16d5:	a2          	nop
+
+000016d6 <t_l_floorld_odd>:
+    16d6:	3e 7b 28    	floorld	f5, r1
+
+000016d9 <e_l_floorld_odd>:
+    16d9:	a2          	nop
+
+000016da <t_l_roundld_tie>:
+    16da:	3e 63 38    	roundld	f7, r1
+
+000016dd <e_l_roundld_tie>:
+    16dd:	a2          	nop
+
+000016de <t_l_movl_store>:
+    16de:	be 84 1a 00 	movl	f3, 0(r2)
+
+000016e2 <e_l_movl_store>:
+    16e2:	a2          	nop
+
+000016e3 <t_l_movl_load>:
+    16e3:	be 44 51 00 	movl	0(r2), f5
+
+000016e7 <e_l_movl_load>:
+    16e7:	a2          	nop
+
+000016e8 <t_l_movl_tos>:
+    16e8:	be c4 1d    	movl	f3, tos
+
+000016eb <e_l_movl_tos>:
+    16eb:	a2          	nop
+
+000016ec <t_l_movl_imm>:
+    16ec:	be 04 a0 40 	movl	$2.5, f0
+    16f0:	04 00 00 00 
+    16f4:	00 00 00 
+
+000016f7 <e_l_movl_imm>:
+    16f7:	a2          	nop
+
+000016f8 <t_lprd_usp_user>:
+    16f8:	ef 1d       	lprd	usp, r3
+
+000016fa <e_lprd_usp_user>:
+    16fa:	a2          	nop
+
+000016fb <t_lprd_usp_super>:
+    16fb:	ef 1d       	lprd	usp, r3
+
+000016fd <e_lprd_usp_super>:
+    16fd:	a2          	nop
+
+000016fe <t_sprd_usp_user>:
+    16fe:	af 1d       	sprd	usp, r3
+
+00001700 <e_sprd_usp_user>:
+    1700:	a2          	nop
+
+00001701 <t_sprd_usp_super>:
+    1701:	af 1d       	sprd	usp, r3
+
+00001703 <e_sprd_usp_super>:
+    1703:	a2          	nop
+
+00001704 <t_lprd_cfg>:
+    1704:	6f 0e       	lprd	cfg, r1
+
+00001706 <e_lprd_cfg>:
+    1706:	a2          	nop
+
+00001707 <t_sprd_cfg>:
+    1707:	2f 0e       	sprd	cfg, r1
+
+00001709 <e_sprd_cfg>:
+    1709:	a2          	nop
+
+0000170a <t_lprd_dcr>:
+    170a:	ef 08       	lprd	dcr, r1
+
+0000170c <e_lprd_dcr>:
+    170c:	a2          	nop
+
+0000170d <t_lprd_bpc>:
+    170d:	6f 09       	lprd	bpc, r1
+
+0000170f <e_lprd_bpc>:
+    170f:	a2          	nop
+
+00001710 <t_lprd_dsr>:
+    1710:	ef 09       	lprd	dsr, r1
+
+00001712 <e_lprd_dsr>:
+    1712:	a2          	nop
+
+00001713 <t_lprd_car>:
+    1713:	6f 0a       	lprd	car, r1
+
+00001715 <e_lprd_car>:
+    1715:	a2          	nop
+
+00001716 <t_sprd_car>:
+    1716:	2f 0a       	sprd	car, r1
+
+00001718 <e_sprd_car>:
+    1718:	a2          	nop
+
+00001719 <t_setcfg_532>:
+    1719:	0e 8b 01    	setcfg	[f,i]
+
+0000171c <e_setcfg_532>:
+    171c:	a2          	nop
+
+0000171d <t_lmr_mcr>:
+    171d:	1e 8b 04    	lmr	mcr, r0
+
+00001720 <e_lmr_mcr>:
+    1720:	a2          	nop
+
+00001721 <t_lmr_msr>:
+    1721:	1e 0b 05    	lmr	msr, r0
+
+00001724 <e_lmr_msr>:
+    1724:	a2          	nop
+
+00001725 <t_lmr_tear>:
+    1725:	1e 8b 05    	lmr	tear, r0
+
+00001728 <e_lmr_tear>:
+    1728:	a2          	nop
+
+00001729 <t_lmr_ptb0_mask>:
+    1729:	1e 0b 06    	lmr	ptb0, r0
+
+0000172c <e_lmr_ptb0_mask>:
+    172c:	a2          	nop
+
+0000172d <t_lmr_ptb1_mask>:
+    172d:	1e 8b 06    	lmr	ptb1, r0
+
+00001730 <e_lmr_ptb1_mask>:
+    1730:	a2          	nop
+
+00001731 <t_smr_ptb1>:
+    1731:	1e 8f 0e    	smr	ptb1, r1
+
+00001734 <e_smr_ptb1>:
+    1734:	a2          	nop
+
+00001735 <t_psr_v_flag>:
+    1735:	ad 0e       	sprw	psr, r1
+
+00001737 <e_psr_v_flag>:
+    1737:	a2          	nop
+
+00001738 <t_lprw_psr_v>:
+    1738:	ed 06       	lprw	psr, r0
+
+0000173a <e_lprw_psr_v>:
+    173a:	a2          	nop
+
+0000173b <t_svc_traps>:
+    173b:	e2          	svc
+
+0000173c <e_svc_traps>:
+    173c:	a2          	nop
+
+0000173d <t_bpt_traps>:
+    173d:	f2          	bpt
+
+0000173e <e_bpt_traps>:
+    173e:	a2          	nop
+
+0000173f <t_flag_trap_when_f_set>:
+    173f:	d2          	flag
+
+00001740 <e_flag_trap_when_f_set>:
+    1740:	a2          	nop
+
+00001741 <t_flag_no_trap_when_f_clear>:
+    1741:	d2          	flag
+    1742:	df 10       	movqd	1, r2
+
+00001744 <e_flag_no_trap_when_f_clear>:
+    1744:	a2          	nop
+
+00001745 <t_wait_hw>:
+    1745:	b2          	wait
+
+00001746 <e_wait_hw>:
+    1746:	a2          	nop
+
+00001747 <t_quod_by_zero>:
+    1747:	ce 73 00    	quod	r0, r1
+
+0000174a <e_quod_by_zero>:
+    174a:	a2          	nop
+
+0000174b <t_remd_by_zero>:
+    174b:	ce 77 00    	remd	r0, r1
+
+0000174e <e_remd_by_zero>:
+    174e:	a2          	nop
+
+0000174f <t_divb_by_zero>:
+    174f:	ce 7c 00    	divb	r0, r1
+
+00001752 <e_divb_by_zero>:
+    1752:	a2          	nop
+
+00001753 <t_modw_by_zero>:
+    1753:	ce 79 00    	modw	r0, r1
+
+00001756 <e_modw_by_zero>:
+    1756:	a2          	nop
+
+00001757 <t_deid_by_zero>:
+    1757:	ce af 00    	deid	r0, r2
+
+0000175a <e_deid_by_zero>:
+    175a:	a2          	nop
+
+0000175b <t_rdval_hw>:
+    175b:	1e 03 48 00 	rdval	0(r1)
+
+0000175f <e_rdval_hw>:
+    175f:	a2          	nop
+
+00001760 <t_wrval_hw>:
+    1760:	1e 07 48 00 	wrval	0(r1)
+
+00001764 <e_wrval_hw>:
+    1764:	a2          	nop
+
+00001765 <t_lprd_intbase_user>:
+    1765:	6f 0f       	lprd	intbase, r1
+
+00001767 <e_lprd_intbase_user>:
+    1767:	a2          	nop
+
+00001768 <t_lprd_intbase_super>:
+    1768:	6f 0f       	lprd	intbase, r1
+
+0000176a <e_lprd_intbase_super>:
+    176a:	a2          	nop
+
+0000176b <t_lprw_psr_user>:
+    176b:	ed 06       	lprw	psr, r0
+
+0000176d <e_lprw_psr_user>:
+    176d:	a2          	nop
+
+0000176e <t_sprw_psr_user>:
+    176e:	ad 0e       	sprw	psr, r1
+
+00001770 <e_sprw_psr_user>:
+    1770:	a2          	nop
+
+00001771 <t_bispsrw_user>:
+    1771:	7d 03       	bispsrw	r0
+
+00001773 <e_bispsrw_user>:
+    1773:	a2          	nop
+
+00001774 <t_bispsrb_user_allowed>:
+    1774:	7c 03       	bispsrb	r0
+
+00001776 <e_bispsrb_user_allowed>:
+    1776:	a2          	nop
+
+00001777 <t_lprb_upsr_user_allowed>:
+    1777:	6c 00       	lprb	us, r0
+
+00001779 <e_lprb_upsr_user_allowed>:
+    1779:	a2          	nop
+
+0000177a <t_sprd_fp_user_allowed>:
+    177a:	2f 0c       	sprd	fp, r1
+
+0000177c <e_sprd_fp_user_allowed>:
+    177c:	a2          	nop
+
+0000177d <t_rett_user>:
+    177d:	42 00       	rett	0
+
+0000177f <e_rett_user>:
+    177f:	a2          	nop
+
+00001780 <t_reti_super_eoi>:
+    1780:	52          	reti
+
+00001781 <e_reti_super_eoi>:
+    1781:	a2          	nop
+
+00001782 <t_movsud_user>:
+    1782:	ae 8f 4a 00 	movsud	0(r1), 0(r2)
+    1786:	00 
+
+00001787 <e_movsud_user>:
+    1787:	a2          	nop
+
+00001788 <t_cinv_hw>:
+    1788:	1e a7 0b    	cinv	[a,i,d], r1
+
+0000178b <e_cinv_hw>:
+    178b:	a2          	nop
+
+0000178c <t_cinv_user>:
+    178c:	1e a7 0b    	cinv	[a,i,d], r1
+
+0000178f <e_cinv_user>:
+    178f:	a2          	nop
+
+00001790 <t_lmr_ivar0_purge>:
+    1790:	1e 0b 07    	lmr	ivar0, r0
+
+00001793 <e_lmr_ivar0_purge>:
+    1793:	a2          	nop
+
+00001794 <t_divd_floor_small>:
+    1794:	ce 7f 00    	divd	r0, r1
+
+00001797 <e_divd_floor_small>:
+    1797:	a2          	nop
+
+00001798 <t_divd_floor_small_pos>:
+    1798:	ce 7f 00    	divd	r0, r1
+
+0000179b <e_divd_floor_small_pos>:
+    179b:	a2          	nop
+
+0000179c <t_quod_trunc_small>:
+    179c:	ce 73 00    	quod	r0, r1
+
+0000179f <e_quod_trunc_small>:
+    179f:	a2          	nop
+
+000017a0 <t_m_add_b>:
+    17a0:	40 00       	addb	r0, r1
+
+000017a2 <e_m_add_b>:
+    17a2:	a2          	nop
+
+000017a3 <t_m_add_w>:
+    17a3:	41 00       	addw	r0, r1
+
+000017a5 <e_m_add_w>:
+    17a5:	a2          	nop
+
+000017a6 <t_m_add_d>:
+    17a6:	43 00       	addd	r0, r1
+
+000017a8 <e_m_add_d>:
+    17a8:	a2          	nop
+
+000017a9 <t_m_addc_b>:
+    17a9:	50 00       	addcb	r0, r1
+
+000017ab <e_m_addc_b>:
+    17ab:	a2          	nop
+
+000017ac <t_m_addc_w>:
+    17ac:	51 00       	addcw	r0, r1
+
+000017ae <e_m_addc_w>:
+    17ae:	a2          	nop
+
+000017af <t_m_addc_d>:
+    17af:	53 00       	addcd	r0, r1
+
+000017b1 <e_m_addc_d>:
+    17b1:	a2          	nop
+
+000017b2 <t_m_sub_b>:
+    17b2:	60 00       	subb	r0, r1
+
+000017b4 <e_m_sub_b>:
+    17b4:	a2          	nop
+
+000017b5 <t_m_sub_w>:
+    17b5:	61 00       	subw	r0, r1
+
+000017b7 <e_m_sub_w>:
+    17b7:	a2          	nop
+
+000017b8 <t_m_sub_d>:
+    17b8:	63 00       	subd	r0, r1
+
+000017ba <e_m_sub_d>:
+    17ba:	a2          	nop
+
+000017bb <t_m_subc_b>:
+    17bb:	70 00       	subcb	r0, r1
+
+000017bd <e_m_subc_b>:
+    17bd:	a2          	nop
+
+000017be <t_m_subc_w>:
+    17be:	71 00       	subcw	r0, r1
+
+000017c0 <e_m_subc_w>:
+    17c0:	a2          	nop
+
+000017c1 <t_m_subc_d>:
+    17c1:	73 00       	subcd	r0, r1
+
+000017c3 <e_m_subc_d>:
+    17c3:	a2          	nop
+
+000017c4 <t_m_cmp_b>:
+    17c4:	44 00       	cmpb	r0, r1
+
+000017c6 <e_m_cmp_b>:
+    17c6:	a2          	nop
+
+000017c7 <t_m_cmp_w>:
+    17c7:	45 00       	cmpw	r0, r1
+
+000017c9 <e_m_cmp_w>:
+    17c9:	a2          	nop
+
+000017ca <t_m_cmp_d>:
+    17ca:	47 00       	cmpd	r0, r1
+
+000017cc <e_m_cmp_d>:
+    17cc:	a2          	nop
+
+000017cd <t_m_and_b>:
+    17cd:	68 00       	andb	r0, r1
+
+000017cf <e_m_and_b>:
+    17cf:	a2          	nop
+
+000017d0 <t_m_and_w>:
+    17d0:	69 00       	andw	r0, r1
+
+000017d2 <e_m_and_w>:
+    17d2:	a2          	nop
+
+000017d3 <t_m_and_d>:
+    17d3:	6b 00       	andd	r0, r1
+
+000017d5 <e_m_and_d>:
+    17d5:	a2          	nop
+
+000017d6 <t_m_or_b>:
+    17d6:	58 00       	orb	r0, r1
+
+000017d8 <e_m_or_b>:
+    17d8:	a2          	nop
+
+000017d9 <t_m_or_w>:
+    17d9:	59 00       	orw	r0, r1
+
+000017db <e_m_or_w>:
+    17db:	a2          	nop
+
+000017dc <t_m_or_d>:
+    17dc:	5b 00       	ord	r0, r1
+
+000017de <e_m_or_d>:
+    17de:	a2          	nop
+
+000017df <t_m_xor_b>:
+    17df:	78 00       	xorb	r0, r1
+
+000017e1 <e_m_xor_b>:
+    17e1:	a2          	nop
+
+000017e2 <t_m_xor_w>:
+    17e2:	79 00       	xorw	r0, r1
+
+000017e4 <e_m_xor_w>:
+    17e4:	a2          	nop
+
+000017e5 <t_m_xor_d>:
+    17e5:	7b 00       	xord	r0, r1
+
+000017e7 <e_m_xor_d>:
+    17e7:	a2          	nop
+
+000017e8 <t_m_bic_b>:
+    17e8:	48 00       	bicb	r0, r1
+
+000017ea <e_m_bic_b>:
+    17ea:	a2          	nop
+
+000017eb <t_m_bic_w>:
+    17eb:	49 00       	bicw	r0, r1
+
+000017ed <e_m_bic_w>:
+    17ed:	a2          	nop
+
+000017ee <t_m_bic_d>:
+    17ee:	4b 00       	bicd	r0, r1
+
+000017f0 <e_m_bic_d>:
+    17f0:	a2          	nop
+
+000017f1 <t_m_mov_b>:
+    17f1:	54 00       	movb	r0, r1
+
+000017f3 <e_m_mov_b>:
+    17f3:	a2          	nop
+
+000017f4 <t_m_mov_w>:
+    17f4:	55 00       	movw	r0, r1
+
+000017f6 <e_m_mov_w>:
+    17f6:	a2          	nop
+
+000017f7 <t_m_mov_d>:
+    17f7:	57 00       	movd	r0, r1
+
+000017f9 <e_m_mov_d>:
+    17f9:	a2          	nop
+
+000017fa <t_m_com_b>:
+    17fa:	4e 74 00    	comb	r0, r1
+
+000017fd <e_m_com_b>:
+    17fd:	a2          	nop
+
+000017fe <t_m_com_w>:
+    17fe:	4e 75 00    	comw	r0, r1
+
+00001801 <e_m_com_w>:
+    1801:	a2          	nop
+
+00001802 <t_m_com_d>:
+    1802:	4e 77 00    	comd	r0, r1
+
+00001805 <e_m_com_d>:
+    1805:	a2          	nop
+
+00001806 <t_m_not_b>:
+    1806:	4e 64 00    	notb	r0, r1
+
+00001809 <e_m_not_b>:
+    1809:	a2          	nop
+
+0000180a <t_m_not_w>:
+    180a:	4e 65 00    	notw	r0, r1
+
+0000180d <e_m_not_w>:
+    180d:	a2          	nop
+
+0000180e <t_m_not_d>:
+    180e:	4e 67 00    	notd	r0, r1
+
+00001811 <e_m_not_d>:
+    1811:	a2          	nop
+
+00001812 <t_m_neg_b>:
+    1812:	4e 60 00    	negb	r0, r1
+
+00001815 <e_m_neg_b>:
+    1815:	a2          	nop
+
+00001816 <t_m_neg_w>:
+    1816:	4e 61 00    	negw	r0, r1
+
+00001819 <e_m_neg_w>:
+    1819:	a2          	nop
+
+0000181a <t_m_neg_d>:
+    181a:	4e 63 00    	negd	r0, r1
+
+0000181d <e_m_neg_d>:
+    181d:	a2          	nop
+
+0000181e <t_m_abs_b>:
+    181e:	4e 70 00    	absb	r0, r1
+
+00001821 <e_m_abs_b>:
+    1821:	a2          	nop
+
+00001822 <t_m_abs_w>:
+    1822:	4e 71 00    	absw	r0, r1
+
+00001825 <e_m_abs_w>:
+    1825:	a2          	nop
+
+00001826 <t_m_abs_d>:
+    1826:	4e 73 00    	absd	r0, r1
+
+00001829 <e_m_abs_d>:
+    1829:	a2          	nop
+
+0000182a <t_m_mul_b>:
+    182a:	ce 60 00    	mulb	r0, r1
+
+0000182d <e_m_mul_b>:
+    182d:	a2          	nop
+
+0000182e <t_m_mul_w>:
+    182e:	ce 61 00    	mulw	r0, r1
+
+00001831 <e_m_mul_w>:
+    1831:	a2          	nop
+
+00001832 <t_m_mul_d>:
+    1832:	ce 63 00    	muld	r0, r1
+
+00001835 <e_m_mul_d>:
+    1835:	a2          	nop
+
+00001836 <t_m_quo_b>:
+    1836:	ce 70 00    	quob	r0, r1
+
+00001839 <e_m_quo_b>:
+    1839:	a2          	nop
+
+0000183a <t_m_quo_w>:
+    183a:	ce 71 00    	quow	r0, r1
+
+0000183d <e_m_quo_w>:
+    183d:	a2          	nop
+
+0000183e <t_m_quo_d>:
+    183e:	ce 73 00    	quod	r0, r1
+
+00001841 <e_m_quo_d>:
+    1841:	a2          	nop
+
+00001842 <t_m_rem_b>:
+    1842:	ce 74 00    	remb	r0, r1
+
+00001845 <e_m_rem_b>:
+    1845:	a2          	nop
+
+00001846 <t_m_rem_w>:
+    1846:	ce 75 00    	remw	r0, r1
+
+00001849 <e_m_rem_w>:
+    1849:	a2          	nop
+
+0000184a <t_m_rem_d>:
+    184a:	ce 77 00    	remd	r0, r1
+
+0000184d <e_m_rem_d>:
+    184d:	a2          	nop
+
+0000184e <t_m_div_b>:
+    184e:	ce 7c 00    	divb	r0, r1
+
+00001851 <e_m_div_b>:
+    1851:	a2          	nop
+
+00001852 <t_m_div_w>:
+    1852:	ce 7d 00    	divw	r0, r1
+
+00001855 <e_m_div_w>:
+    1855:	a2          	nop
+
+00001856 <t_m_div_d>:
+    1856:	ce 7f 00    	divd	r0, r1
+
+00001859 <e_m_div_d>:
+    1859:	a2          	nop
+
+0000185a <t_m_mod_b>:
+    185a:	ce 78 00    	modb	r0, r1
+
+0000185d <e_m_mod_b>:
+    185d:	a2          	nop
+
+0000185e <t_m_mod_w>:
+    185e:	ce 79 00    	modw	r0, r1
+
+00001861 <e_m_mod_w>:
+    1861:	a2          	nop
+
+00001862 <t_m_mod_d>:
+    1862:	ce 7b 00    	modd	r0, r1
+
+00001865 <e_m_mod_d>:
+    1865:	a2          	nop
+
+00001866 <t_m_lsh_b>:
+    1866:	4e 54 00    	lshb	r0, r1
+
+00001869 <e_m_lsh_b>:
+    1869:	a2          	nop
+
+0000186a <t_m_lsh_w>:
+    186a:	4e 55 00    	lshw	r0, r1
+
+0000186d <e_m_lsh_w>:
+    186d:	a2          	nop
+
+0000186e <t_m_lsh_d>:
+    186e:	4e 57 00    	lshd	r0, r1
+
+00001871 <e_m_lsh_d>:
+    1871:	a2          	nop
+
+00001872 <t_m_ash_b>:
+    1872:	4e 44 00    	ashb	r0, r1
+
+00001875 <e_m_ash_b>:
+    1875:	a2          	nop
+
+00001876 <t_m_ash_w>:
+    1876:	4e 45 00    	ashw	r0, r1
+
+00001879 <e_m_ash_w>:
+    1879:	a2          	nop
+
+0000187a <t_m_ash_d>:
+    187a:	4e 47 00    	ashd	r0, r1
+
+0000187d <e_m_ash_d>:
+    187d:	a2          	nop
+
+0000187e <t_m_rot_b>:
+    187e:	4e 40 00    	rotb	r0, r1
+
+00001881 <e_m_rot_b>:
+    1881:	a2          	nop
+
+00001882 <t_m_rot_w>:
+    1882:	4e 41 00    	rotw	r0, r1
+
+00001885 <e_m_rot_w>:
+    1885:	a2          	nop
+
+00001886 <t_m_rot_d>:
+    1886:	4e 43 00    	rotd	r0, r1
+
+00001889 <e_m_rot_d>:
+    1889:	a2          	nop
+    188a:	00 00       	addb	r0, r0
+    188c:	00 00       	addb	r0, r0
+	...

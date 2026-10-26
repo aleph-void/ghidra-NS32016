@@ -5,3 +5,4 @@ build/
 dist/
 .gradle/
 __pycache__/
+*.sla.lock

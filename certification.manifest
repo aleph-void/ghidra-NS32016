@@ -1,0 +1,15 @@
+##VERSION: 2.0
+.gitignore||LICENSE||||END|
+LICENSE||LICENSE||||END|
+LICENSE.txt||LICENSE||||END|
+Module.manifest||LICENSE||||END|
+README.html||LICENSE||||END|
+README.md||LICENSE||||END|
+data/build.xml||LICENSE||||END|
+data/languages/NS32016.cspec||LICENSE||||END|
+data/languages/NS32016.ldefs||LICENSE||||END|
+data/languages/NS32016.pspec||LICENSE||||END|
+data/languages/NS32016.slaspec||LICENSE||||END|
+data/languages/NS32532.slaspec||LICENSE||||END|
+data/sleighArgs.txt||LICENSE||||END|
+src/main/java/ghidra/app/util/opinion/NS32kAoutLoader.java||LICENSE||||END|
